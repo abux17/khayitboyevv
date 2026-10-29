@@ -6,63 +6,47 @@ const translations = {
     navJourney: "Mening yo‘lim",
     navGallery: "Galereya",
     navContact: "Aloqa",
-
     heroLabel: "Shaxsiy portfolio",
     heroIntro: "Salom, men",
     heroTitle: "Abdulla Hayitboyev",
-    heroText:
-      "Talaba, bo‘lajak marketolog va dasturchi. Yangi g‘oyalar, texnologiyalar va shaxsiy rivojlanish sari.",
+    heroText: "Talaba, bo‘lajak marketolog va dasturchi. Yangi g‘oyalar, texnologiyalar va shaxsiy rivojlanish sari.",
     discover: "Men haqimda",
     viewPhotos: "Suratlarni ko‘rish",
-
     metaOne: "Talaba",
     metaTwo: "Bo‘lajak marketolog",
     metaThree: "Bo‘lajak dasturchi",
     portraitCaption: "Mening dunyomga xush kelibsiz",
-
     aboutLabel: "Men haqimda",
     aboutTitle: "Maqsad sari harakat",
-    aboutText:
-      "Men — Abdulla Hayitboyev, internetda Khayitboyevv nomi bilan tanilganman. 2007-yil 29-avgustda Jizzax viloyati, G‘allaorol tumani, Uzunbuloq qishlog‘ida Abdujalilovlar oilasida tavallud topganman. Hozirda talabaman. Marketing va dasturlashga qiziqaman. Asosiy qiziqishlarim — dasturlash, kompyuter texnologiyalari va qo‘shiq aytish. Kelajakdagi maqsadim — o‘z shaxsiy brendimni yaratish va yuqori malakali dasturchi bo‘lish.",
+    aboutText: "Men — Abdulla Hayitboyev, internetda Khayitboyevv nomi bilan tanilganman. 2007-yil 29-avgustda Jizzax viloyati, G‘allaorol tumani, Uzunbuloq qishlog‘ida Abdujalilovlar oilasida tavallud topganman. Hozirda talabaman. Marketing va dasturlashga qiziqaman. Asosiy qiziqishlarim — dasturlash, kompyuter texnologiyalari va qo‘shiq aytish. Kelajakdagi maqsadim — o‘z shaxsiy brendimni yaratish va yuqori malakali dasturchi bo‘lish.",
     editHint: "Har kuni o‘rganish va rivojlanish",
     readStory: "Mening hikoyam",
-
     factOneTitle: "Tug‘ilgan sana",
     factOneText: "29-avgust, 2007-yil",
     factTwoTitle: "Ta’lim va yo‘nalish",
     factTwoText: "Talaba · Bo‘lajak marketolog · Bo‘lajak dasturchi",
     factThreeTitle: "Qiziqishlar",
     factThreeText: "Dasturlash · Kompyuter texnologiyalari · Qo‘shiq aytish",
-
     journeyLabel: "Rivojlanish",
     journeyTitle: "Mening yo‘lim",
-    journeyText:
-      "Har bir bosqich — yangi bilim, yangi tajriba va kelajak sari yana bir qadam.",
+    journeyText: "Har bir bosqich — yangi bilim, yangi tajriba va kelajak sari yana bir qadam.",
     timeOneTitle: "Boshlanish",
-    timeOneText:
-      "2007-yil 29-avgustda Jizzax viloyati, G‘allaorol tumani, Uzunbuloq qishlog‘ida dunyoga kelganman.",
+    timeOneText: "2007-yil 29-avgustda Jizzax viloyati, G‘allaorol tumani, Uzunbuloq qishlog‘ida dunyoga kelganman.",
     timeTwoTitle: "Ta’lim va izlanish",
-    timeTwoText:
-      "Hozirda talaba sifatida bilimlarimni oshirib, marketing va dasturlash yo‘nalishlarini o‘rganmoqdaman.",
+    timeTwoText: "Hozirda talaba sifatida bilimlarimni oshirib, marketing va dasturlash yo‘nalishlarini o‘rganmoqdaman.",
     timeThreeTitle: "Kelajakdagi maqsadlar",
-    timeThreeText:
-      "O‘z shaxsiy brendimni yaratish, dasturlash mahoratimni oshirish va kuchli mutaxassis bo‘lishni maqsad qilganman.",
-
+    timeThreeText: "O‘z shaxsiy brendimni yaratish, dasturlash mahoratimni oshirish va kuchli mutaxassis bo‘lishni maqsad qilganman.",
     galleryLabel: "Galereya",
     galleryTitle: "Lahzalar va xotiralar",
-    galleryText:
-      "Hayotimdagi esda qolarli lahzalar va men uchun qadrli suratlar.",
+    galleryText: "Hayotimdagi esda qolarli lahzalar va men uchun qadrli suratlar.",
     galleryHint: "Suratni kattalashtirish uchun ustiga bosing",
-
     contactLabel: "Aloqa",
     contactEyebrow: "Bog‘lanamiz",
     contactTitle: "Men bilan aloqada bo‘ling",
-    contactText:
-      "Hamkorlik, yangi g‘oyalar yoki shunchaki suhbat uchun ijtimoiy tarmoqlarim orqali bog‘lanishingiz mumkin.",
+    contactText: "Hamkorlik, yangi g‘oyalar yoki shunchaki suhbat uchun ijtimoiy tarmoqlarim orqali bog‘lanishingiz mumkin.",
     socialHint: "Ijtimoiy tarmoqlarda meni kuzatib boring",
     backTop: "Yuqoriga qaytish",
     missingPhoto: "Bu suratni yuklab bo‘lmadi.",
-
     birthValue: "29-avgust, 2007-yil",
     birthPlaceValue: "Uzunbuloq, G‘allaorol, Jizzax",
     roleValue: "Talaba · Bo‘lajak marketolog · Bo‘lajak dasturchi",
@@ -76,63 +60,47 @@ const translations = {
     navJourney: "My journey",
     navGallery: "Gallery",
     navContact: "Contact",
-
     heroLabel: "Personal portfolio",
     heroIntro: "Hello, I'm",
     heroTitle: "Abdulla Hayitboyev",
-    heroText:
-      "A student, aspiring marketer, and future software developer. Exploring new ideas, technology, and personal growth.",
+    heroText: "A student, aspiring marketer, and future software developer. Exploring new ideas, technology, and personal growth.",
     discover: "About me",
     viewPhotos: "View photos",
-
     metaOne: "Student",
     metaTwo: "Aspiring marketer",
     metaThree: "Aspiring developer",
     portraitCaption: "Welcome to my world",
-
     aboutLabel: "About me",
     aboutTitle: "Driven by ambition",
-    aboutText:
-      "I'm Abdulla Hayitboyev, known online as Khayitboyevv. I was born on August 29, 2007, in Uzunbuloq village, G‘allaorol district, Jizzakh region, Uzbekistan, into the Abdujalilov family. I'm currently a student interested in marketing and software development. My main interests are programming, computer technology, and singing. My future goals are to build my own personal brand and become a highly skilled software developer.",
+    aboutText: "I'm Abdulla Hayitboyev, known online as Khayitboyevv. I was born on August 29, 2007, in Uzunbuloq village, G‘allaorol district, Jizzakh region, Uzbekistan, into the Abdujalilov family. I'm currently a student interested in marketing and software development. My main interests are programming, computer technology, and singing. My future goals are to build my own personal brand and become a highly skilled software developer.",
     editHint: "Learning and growing every day",
     readStory: "My story",
-
     factOneTitle: "Date of birth",
     factOneText: "August 29, 2007",
     factTwoTitle: "Education and career",
     factTwoText: "Student · Aspiring marketer · Aspiring developer",
     factThreeTitle: "Interests",
     factThreeText: "Programming · Computer technology · Singing",
-
     journeyLabel: "Growth",
     journeyTitle: "My journey",
-    journeyText:
-      "Every stage brings new knowledge, new experience, and another step toward the future.",
+    journeyText: "Every stage brings new knowledge, new experience, and another step toward the future.",
     timeOneTitle: "The beginning",
-    timeOneText:
-      "I was born on August 29, 2007, in Uzunbuloq village, G‘allaorol district, Jizzakh region, Uzbekistan.",
+    timeOneText: "I was born on August 29, 2007, in Uzunbuloq village, G‘allaorol district, Jizzakh region, Uzbekistan.",
     timeTwoTitle: "Learning and exploring",
-    timeTwoText:
-      "As a student, I continue to expand my knowledge and explore marketing and software development.",
+    timeTwoText: "As a student, I continue to expand my knowledge and explore marketing and software development.",
     timeThreeTitle: "Future ambitions",
-    timeThreeText:
-      "My goals are to build my own personal brand, improve my programming skills, and become a highly skilled professional.",
-
+    timeThreeText: "My goals are to build my own personal brand, improve my programming skills, and become a highly skilled professional.",
     galleryLabel: "Gallery",
     galleryTitle: "Moments and memories",
-    galleryText:
-      "Memorable moments from my life and photographs that mean a lot to me.",
+    galleryText: "Memorable moments from my life and photographs that mean a lot to me.",
     galleryHint: "Click a photo to enlarge it",
-
     contactLabel: "Contact",
     contactEyebrow: "Let's connect",
     contactTitle: "Get in touch",
-    contactText:
-      "Feel free to contact me through my social media for collaboration, new ideas, or just a conversation.",
+    contactText: "Feel free to contact me through my social media for collaboration, new ideas, or just a conversation.",
     socialHint: "Follow me on social media",
     backTop: "Back to top",
     missingPhoto: "This photo could not be loaded.",
-
     birthValue: "August 29, 2007",
     birthPlaceValue: "Uzunbuloq, G‘allaorol, Jizzakh",
     roleValue: "Student · Aspiring marketer · Aspiring developer",
@@ -146,63 +114,47 @@ const translations = {
     navJourney: "Мой путь",
     navGallery: "Галерея",
     navContact: "Контакты",
-
     heroLabel: "Личное портфолио",
     heroIntro: "Привет, я",
     heroTitle: "Абдулла Хайитбоев",
-    heroText:
-      "Студент, будущий маркетолог и разработчик. Изучаю новые идеи, технологии и стремлюсь к личностному росту.",
+    heroText: "Студент, будущий маркетолог и разработчик. Изучаю новые идеи, технологии и стремлюсь к личностному росту.",
     discover: "Обо мне",
     viewPhotos: "Смотреть фотографии",
-
     metaOne: "Студент",
     metaTwo: "Будущий маркетолог",
     metaThree: "Будущий разработчик",
     portraitCaption: "Добро пожаловать в мой мир",
-
     aboutLabel: "Обо мне",
     aboutTitle: "Движение к цели",
-    aboutText:
-      "Меня зовут Абдулла Хайитбоев, в интернете я известен под именем Khayitboyevv. Я родился 29 августа 2007 года в семье Абдужалиловых, в селе Узунбулак Галляаральского района Джизакской области Узбекистана. В настоящее время я студент, интересуюсь маркетингом и разработкой программного обеспечения. Мои основные увлечения — программирование, компьютерные технологии и пение. Мои цели на будущее — создать собственный личный бренд и стать высококвалифицированным программистом.",
+    aboutText: "Меня зовут Абдулла Хайитбоев, в интернете я известен под именем Khayitboyevv. Я родился 29 августа 2007 года в семье Абдужалиловых, в селе Узунбулак Галляаральского района Джизакской области Узбекистана. В настоящее время я студент, интересуюсь маркетингом и разработкой программного обеспечения. Мои основные увлечения — программирование, компьютерные технологии и пение. Мои цели на будущее — создать собственный личный бренд и стать высококвалифицированным программистом.",
     editHint: "Учиться и развиваться каждый день",
     readStory: "Моя история",
-
     factOneTitle: "Дата рождения",
     factOneText: "29 августа 2007 года",
     factTwoTitle: "Образование и профессия",
     factTwoText: "Студент · Будущий маркетолог · Будущий разработчик",
     factThreeTitle: "Интересы",
     factThreeText: "Программирование · Компьютерные технологии · Пение",
-
     journeyLabel: "Развитие",
     journeyTitle: "Мой путь",
-    journeyText:
-      "Каждый этап приносит новые знания, опыт и ещё один шаг к будущему.",
+    journeyText: "Каждый этап приносит новые знания, опыт и ещё один шаг к будущему.",
     timeOneTitle: "Начало",
-    timeOneText:
-      "Я родился 29 августа 2007 года в селе Узунбулак Галляаральского района Джизакской области Узбекистана.",
+    timeOneText: "Я родился 29 августа 2007 года в селе Узунбулак Галляаральского района Джизакской области Узбекистана.",
     timeTwoTitle: "Учёба и поиск нового",
-    timeTwoText:
-      "Сейчас я студент, расширяю свои знания и изучаю маркетинг и разработку программного обеспечения.",
+    timeTwoText: "Сейчас я студент, расширяю свои знания и изучаю маркетинг и разработку программного обеспечения.",
     timeThreeTitle: "Цели на будущее",
-    timeThreeText:
-      "Я стремлюсь создать собственный личный бренд, совершенствовать навыки программирования и стать высококвалифицированным специалистом.",
-
+    timeThreeText: "Я стремлюсь создать собственный личный бренд, совершенствовать навыки программирования и стать высококвалифицированным специалистом.",
     galleryLabel: "Галерея",
     galleryTitle: "Моменты и воспоминания",
-    galleryText:
-      "Запоминающиеся моменты моей жизни и фотографии, которые мне дороги.",
+    galleryText: "Запоминающиеся моменты моей жизни и фотографии, которые мне дороги.",
     galleryHint: "Нажмите на фотографию, чтобы увеличить её",
-
     contactLabel: "Контакты",
     contactEyebrow: "Давайте общаться",
     contactTitle: "Будем на связи",
-    contactText:
-      "Вы можете связаться со мной через социальные сети для сотрудничества, обсуждения новых идей или просто общения.",
+    contactText: "Вы можете связаться со мной через социальные сети для сотрудничества, обсуждения новых идей или просто общения.",
     socialHint: "Подписывайтесь на меня в социальных сетях",
     backTop: "Наверх",
     missingPhoto: "Не удалось загрузить эту фотографию.",
-
     birthValue: "29 августа 2007 года",
     birthPlaceValue: "Узунбулак, Галляараль, Джизакская область",
     roleValue: "Студент · Будущий маркетолог · Будущий разработчик",
@@ -217,10 +169,7 @@ const translations = {
 // ================================
 
 function applyLanguage(language) {
-  const selectedLanguage = translations[language]
-    ? language
-    : "uz";
-
+  const selectedLanguage = translations[language] ? language : "uz";
   document.documentElement.lang = selectedLanguage;
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
@@ -251,7 +200,7 @@ function applyLanguage(language) {
   });
 
   const languageSelector = document.querySelector(
-    "#languageSelect, #language-selector, [data-language-select]"
+    "#language, #languageSelect, #language-selector, [data-language-select]"
   );
 
   if (languageSelector) {
@@ -353,34 +302,20 @@ function initializeMobileMenu() {
 
 function initializeGallery() {
   const photoButtons = Array.from(
-    document.querySelectorAll("[data-photo]")
+    document.querySelectorAll(".gallery-item[data-photo], [data-photo]")
   );
 
-  const lightbox = document.querySelector(
-    "#lightbox, .lightbox, [data-lightbox]"
-  );
+  const lightbox = document.getElementById("lightbox");
 
   if (!photoButtons.length || !lightbox) return;
 
-  const lightboxImage = lightbox.querySelector(
-    "#lightboxImage, .lightbox-image, img"
-  );
+  const lightboxImage = document.getElementById("lightboxImage");
+  const lightboxCaption = document.getElementById("lightboxCaption");
+  const closeButton = document.getElementById("lightboxClose");
 
-  const lightboxCaption = lightbox.querySelector(
-    "#lightboxCaption, .lightbox-caption, [data-lightbox-caption]"
-  );
-
-  const closeButton = lightbox.querySelector(
-    "#lightboxClose, .lightbox-close, [data-lightbox-close]"
-  );
-
-  const previousButton = lightbox.querySelector(
-    "#lightboxPrev, .lightbox-prev, [data-lightbox-prev]"
-  );
-
-  const nextButton = lightbox.querySelector(
-    "#lightboxNext, .lightbox-next, [data-lightbox-next]"
-  );
+  // HTML dagi haqiqiy ID lar:
+  const previousButton = document.getElementById("prevPhoto");
+  const nextButton = document.getElementById("nextPhoto");
 
   if (!lightboxImage) return;
 
@@ -402,7 +337,7 @@ function initializeGallery() {
 
   function openLightbox(index) {
     const photo = getPhoto(index);
-    if (!photo) return;
+    if (!photo || !photo.src) return;
 
     currentIndex = index;
     previousFocus = document.activeElement;
@@ -414,17 +349,26 @@ function initializeGallery() {
       lightboxCaption.textContent = photo.alt;
     }
 
+    // ASOSIY TUZATISH: hidden atributini olib tashlash
+    lightbox.hidden = false;
+    lightbox.removeAttribute("hidden");
+
     lightbox.classList.add("open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.classList.add("lightbox-open");
 
-    if (closeButton) closeButton.focus();
+    if (closeButton) {
+      closeButton.focus();
+    }
   }
 
   function closeLightbox() {
     lightbox.classList.remove("open");
+    lightbox.hidden = true;
     lightbox.setAttribute("aria-hidden", "true");
     document.body.classList.remove("lightbox-open");
+
+    lightboxImage.removeAttribute("src");
 
     if (previousFocus && typeof previousFocus.focus === "function") {
       previousFocus.focus();
@@ -436,41 +380,47 @@ function initializeGallery() {
       (currentIndex + direction + photoButtons.length) %
       photoButtons.length;
 
-    const photo = getPhoto(currentIndex);
-    if (!photo) return;
-
-    lightboxImage.src = photo.src;
-    lightboxImage.alt = photo.alt;
-
-    if (lightboxCaption) {
-      lightboxCaption.textContent = photo.alt;
-    }
+    openLightbox(currentIndex);
   }
 
+  // Suratlarni ochish
   photoButtons.forEach((button, index) => {
-    button.addEventListener("click", () => openLightbox(index));
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      openLightbox(index);
+    });
   });
 
+  // Yopish tugmasi
   if (closeButton) {
     closeButton.addEventListener("click", closeLightbox);
   }
 
+  // Oldingi va keyingi surat
   if (previousButton) {
-    previousButton.addEventListener("click", () => showPhoto(-1));
+    previousButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      showPhoto(-1);
+    });
   }
 
   if (nextButton) {
-    nextButton.addEventListener("click", () => showPhoto(1));
+    nextButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      showPhoto(1);
+    });
   }
 
+  // Orqa fon ustiga bosilganda yopish
   lightbox.addEventListener("click", (event) => {
     if (event.target === lightbox) {
       closeLightbox();
     }
   });
 
+  // Klaviatura boshqaruvi
   document.addEventListener("keydown", (event) => {
-    if (!lightbox.classList.contains("open")) return;
+    if (lightbox.hidden) return;
 
     if (event.key === "Escape") {
       closeLightbox();
@@ -479,6 +429,11 @@ function initializeGallery() {
     } else if (event.key === "ArrowRight") {
       showPhoto(1);
     }
+  });
+
+  // Rasm yuklanmasa xabar ko‘rsatish
+  lightboxImage.addEventListener("error", () => {
+    lightboxImage.alt = "Bu suratni yuklab bo‘lmadi.";
   });
 }
 
@@ -516,7 +471,7 @@ function initializeSocialLinks() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const languageSelector = document.querySelector(
-    "#languageSelect, #language-selector, [data-language-select]"
+    "#language, #languageSelect, #language-selector, [data-language-select]"
   );
 
   let savedLanguage = "uz";
