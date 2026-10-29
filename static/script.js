@@ -3,77 +3,75 @@
    KHAYITBOYEVV - MAIN JAVASCRIPT
 ===================================== */
 
-
-/* =====================================
-   1. TRANSLATIONS
-===================================== */
-
 const translations = {
-
     uz: {
         navHome: "Bosh sahifa",
         navAbout: "Men haqimda",
-        navJourney: "Mening yo‘lim",
+        navJourney: "Hayot yo‘lim",
         navGallery: "Galereya",
         navContact: "Aloqa",
 
         heroLabel: "SHAXSIY PORTFOLIO",
-        heroIntro: "Salom, men Abdulla Hayitboyev.",
-        heroTitle: "O‘z hikoyamni yaratyapman.",
-        heroText: "Har bir kun — yangi imkoniyat, har bir qadam — yangi tajriba.",
-        discover: "Men haqimda",
-        viewPhotos: "Suratlarni ko‘rish",
+        heroIntro: "Salom, men",
+        heroTitle: "Abdulla Hayitboyev",
+        heroText: "Men — Abdulla Hayitboyev, internetda Khayitboyevv nomi bilan tanilganman. Dasturlash, texnologiyalar va marketingga qiziqaman.",
+        heroButton: "Men haqimda",
+        contactButton: "Bog‘lanish",
 
-        metaOne: "Maqsad sari",
-        metaTwo: "Doimiy rivojlanish",
-        metaThree: "Yangi tajribalar",
-        portraitCaption: "Abdulla Hayitboyev",
+        metaOne: "Tug‘ilgan yilim",
+        metaTwo: "O‘zbekiston",
+        metaThree: "Katta maqsadlar",
+        portraitCaption: "ABDULLA HAYITBOYEV",
 
         aboutLabel: "MEN HAQIMDA",
         aboutTitle: "Har bir insonning o‘z hikoyasi bor.",
-        aboutText: "Men yangi bilimlar olishni, o‘rganishni va o‘z ustimda ishlashni yaxshi ko‘raman.",
+        aboutText: "Men — Abdulla Hayitboyev. Internetda Khayitboyevv nomi bilan tanilganman. Yangi bilimlarni o‘rganish, dasturlash, kompyuter texnologiyalari va marketing sohalariga qiziqaman. Kelajakda o‘z sohamning yetuk mutaxassisi bo‘lishni maqsad qilganman.",
         editHint: "Har kuni o‘zimning yaxshiroq versiyam bo‘lishga intilaman.",
-        readStory: "Hikoyamni o‘qish →",
 
-        factOneTitle: "Shaxsiyat",
-        factOneText: "Har doim yangi narsalarni o‘rganishga intilaman.",
-        factTwoTitle: "Qiziqishlar",
-        factTwoText: "Texnologiya, ijod va yangi tajribalar.",
-        factThreeTitle: "Maqsad",
-        factThreeText: "Kelajakda katta natijalarga erishish.",
+        factOneTitle: "Texnologiya",
+        factOneText: "Dasturlash va kompyuter texnologiyalari.",
+        factTwoTitle: "Marketing",
+        factTwoText: "Marketing va shaxsiy brend rivojlantirish.",
+        factThreeTitle: "Ijod",
+        factThreeText: "Musiqa va qo‘shiq kuylash.",
 
-        journeyLabel: "MENING YO‘LIM",
-        journeyTitle: "Har bir qadam muhim.",
-        journeyText: "Rivojlanish — bu doimiy jarayon.",
+        personalLabel: "SHAXSIY MA'LUMOTLAR",
+        birthLabel: "Tug‘ilgan sana",
+        birthValue: "29-avgust 2007-yil",
+        birthPlaceLabel: "Tug‘ilgan joy",
+        birthPlaceValue: "Uzunbuloq, G‘allaorol, Jizzax",
+        roleLabel: "Maqomim",
+        roleValue: "Talaba | Bo‘lajak marketolog va dasturchi",
+        interestsLabel: "Qiziqishlarim",
+        interestsValue: "Dasturlash, kompyuter texnologiyalari, qo‘shiq kuylash",
+        goalLabel: "Kelajakdagi maqsadim",
+        goalValue: "Shaxsiy brend yaratish va kuchli dasturchi bo‘lish",
 
+        journeyLabel: "HAYOT YO‘LIM",
+        journeyTitle: "Mening hikoyam",
+        journeyText: "O‘tmish, bugun va kelajak sari.",
         timeOneTitle: "Boshlanish",
-        timeOneText: "Yangi bilimlar va tajribalar sari ilk qadamlar.",
-        timeTwoTitle: "Rivojlanish",
-        timeTwoText: "O‘rganish, izlanish va o‘z ustimda ishlash.",
-        timeThreeTitle: "Kelajak",
-        timeThreeText: "Katta maqsadlar va yangi marralar sari.",
+        timeOneText: "29-avgust kuni Jizzax viloyatining Uzunbuloq qishlog‘ida tug‘ilganman.",
+        timeTwoDate: "Bugun",
+        timeTwoTitle: "O‘rganish",
+        timeTwoText: "Ta’lim olyapman, yangi bilimlar va texnologiyalarni o‘rganyapman.",
+        timeThreeDate: "Kelajak",
+        timeThreeTitle: "Maqsadlar",
+        timeThreeText: "Kuchli dasturchi va marketolog bo‘lish, shaxsiy brend yaratish.",
 
         galleryLabel: "GALEREYA",
-        galleryTitle: "Xotiralar va lahzalar.",
-        galleryText: "Hayotimdagi unutilmas lahzalardan lavhalar.",
-        galleryHint: "Surat ustiga bosib, kattalashtirib ko‘rishingiz mumkin.",
+        galleryTitle: "Esda qolarli lahzalar",
+        galleryText: "Hayotimdan kichik lavhalar.",
 
         contactLabel: "ALOQA",
-        contactEyebrow: "Keling, bog‘lanamiz.",
-        contactTitle: "Yangi tanishuvlarga doim ochiqman.",
-        contactText: "Quyidagi ijtimoiy tarmoqlar orqali men bilan bog‘lanishingiz mumkin.",
-        socialHint: "Ijtimoiy tarmoqlarim.",
-        
+        contactEyebrow: "BIRGA ALOQADA BO‘LAYLIK",
+        contactTitle: "Har qanday yaxshi g‘oya suhbatdan boshlanadi.",
+        contactText: "Men bilan ijtimoiy tarmoqlar orqali bog‘lanishingiz mumkin.",
+
         backTop: "Yuqoriga ↑",
-        missingPhoto: "Surat",
-
-        birthValue: "2000",
-        birthPlaceValue: "O‘zbekiston",
-        roleValue: "Marketolog",
-        interestsValue: "Texnologiya, ijod",
-        goalValue: "Rivojlanish"
+        footerText: "Barcha huquqlar himoyalangan.",
+        missingPhoto: "Surat"
     },
-
 
     en: {
         navHome: "Home",
@@ -83,62 +81,66 @@ const translations = {
         navContact: "Contact",
 
         heroLabel: "PERSONAL PORTFOLIO",
-        heroIntro: "Hello, I'm Abdulla Hayitboyev.",
-        heroTitle: "Creating my own story.",
-        heroText: "Every day is a new opportunity, every step is a new experience.",
-        discover: "About me",
-        viewPhotos: "View photos",
+        heroIntro: "Hello, I'm",
+        heroTitle: "Abdulla Hayitboyev",
+        heroText: "I'm Abdulla Hayitboyev, known online as Khayitboyevv. I'm interested in programming, technology and marketing.",
+        heroButton: "About me",
+        contactButton: "Get in touch",
 
-        metaOne: "Towards goals",
-        metaTwo: "Constant growth",
-        metaThree: "New experiences",
-        portraitCaption: "Abdulla Hayitboyev",
+        metaOne: "Birth year",
+        metaTwo: "Uzbekistan",
+        metaThree: "Big ambitions",
+        portraitCaption: "ABDULLA HAYITBOYEV",
 
         aboutLabel: "ABOUT ME",
         aboutTitle: "Everyone has their own story.",
-        aboutText: "I love gaining new knowledge, learning and working on myself.",
+        aboutText: "I'm Abdulla Hayitboyev, known online as Khayitboyevv. I'm interested in learning new things, programming, computer technology and marketing. My goal is to become a skilled professional in my field.",
         editHint: "Every day I strive to become a better version of myself.",
-        readStory: "Read my story →",
 
-        factOneTitle: "Personality",
-        factOneText: "I always strive to learn new things.",
-        factTwoTitle: "Interests",
-        factTwoText: "Technology, creativity and new experiences.",
-        factThreeTitle: "Goals",
-        factThreeText: "Achieving great results in the future.",
+        factOneTitle: "Technology",
+        factOneText: "Programming and computer technology.",
+        factTwoTitle: "Marketing",
+        factTwoText: "Marketing and personal brand development.",
+        factThreeTitle: "Creativity",
+        factThreeText: "Music and singing.",
+
+        personalLabel: "PERSONAL INFORMATION",
+        birthLabel: "Date of birth",
+        birthValue: "29 August 2007",
+        birthPlaceLabel: "Place of birth",
+        birthPlaceValue: "Uzunbuloq, Gallaorol, Jizzakh",
+        roleLabel: "Current status",
+        roleValue: "Student | Aspiring marketer and developer",
+        interestsLabel: "Interests",
+        interestsValue: "Programming, computer technology, singing",
+        goalLabel: "Future goal",
+        goalValue: "Building a personal brand and becoming a skilled developer",
 
         journeyLabel: "MY JOURNEY",
-        journeyTitle: "Every step matters.",
-        journeyText: "Growth is a continuous process.",
-
+        journeyTitle: "My story",
+        journeyText: "From the past, through today, towards the future.",
         timeOneTitle: "Beginning",
-        timeOneText: "First steps towards new knowledge and experiences.",
-        timeTwoTitle: "Development",
-        timeTwoText: "Learning, exploring and working on myself.",
-        timeThreeTitle: "Future",
-        timeThreeText: "Towards bigger goals and new achievements.",
+        timeOneText: "I was born on 29 August in Uzunbuloq village, Jizzakh region.",
+        timeTwoDate: "Today",
+        timeTwoTitle: "Learning",
+        timeTwoText: "I'm studying and learning new skills and technologies.",
+        timeThreeDate: "Future",
+        timeThreeTitle: "Goals",
+        timeThreeText: "Becoming a skilled developer and marketer and building a personal brand.",
 
         galleryLabel: "GALLERY",
-        galleryTitle: "Memories and moments.",
-        galleryText: "Moments from my life worth remembering.",
-        galleryHint: "Click on a photo to view it in a larger size.",
+        galleryTitle: "Memorable moments",
+        galleryText: "A few glimpses from my life.",
 
         contactLabel: "CONTACT",
-        contactEyebrow: "Let's connect.",
-        contactTitle: "Always open to new connections.",
-        contactText: "You can contact me through the social networks below.",
-        socialHint: "My social networks.",
+        contactEyebrow: "LET'S CONNECT",
+        contactTitle: "Every great idea begins with a conversation.",
+        contactText: "You can contact me through my social networks.",
 
         backTop: "Back to top ↑",
-        missingPhoto: "Photo",
-
-        birthValue: "2000",
-        birthPlaceValue: "Uzbekistan",
-        roleValue: "Marketer",
-        interestsValue: "Technology, creativity",
-        goalValue: "Development"
+        footerText: "All rights reserved.",
+        missingPhoto: "Photo"
     },
-
 
     ru: {
         navHome: "Главная",
@@ -148,62 +150,66 @@ const translations = {
         navContact: "Контакты",
 
         heroLabel: "ЛИЧНОЕ ПОРТФОЛИО",
-        heroIntro: "Привет, я Абдулла Хайитбоев.",
-        heroTitle: "Создаю свою собственную историю.",
-        heroText: "Каждый день — новая возможность, каждый шаг — новый опыт.",
-        discover: "Обо мне",
-        viewPhotos: "Посмотреть фото",
+        heroIntro: "Привет, я",
+        heroTitle: "Абдулла Хайитбоев",
+        heroText: "Я — Абдулла Хайитбоев, известный в интернете под именем Khayitboyevv. Интересуюсь программированием, технологиями и маркетингом.",
+        heroButton: "Обо мне",
+        contactButton: "Связаться",
 
-        metaOne: "К своим целям",
-        metaTwo: "Постоянное развитие",
-        metaThree: "Новый опыт",
-        portraitCaption: "Абдулла Хайитбоев",
+        metaOne: "Год рождения",
+        metaTwo: "Узбекистан",
+        metaThree: "Большие цели",
+        portraitCaption: "АБДУЛЛА ХАЙИТБОЕВ",
 
         aboutLabel: "ОБО МНЕ",
         aboutTitle: "У каждого человека своя история.",
-        aboutText: "Мне нравится получать новые знания, учиться и работать над собой.",
+        aboutText: "Я — Абдулла Хайитбоев, известный в интернете как Khayitboyevv. Интересуюсь новыми знаниями, программированием, компьютерными технологиями и маркетингом. Моя цель — стать профессионалом в своей области.",
         editHint: "Каждый день я стремлюсь стать лучше.",
-        readStory: "Читать мою историю →",
 
-        factOneTitle: "Личность",
-        factOneText: "Всегда стремлюсь узнавать что-то новое.",
-        factTwoTitle: "Интересы",
-        factTwoText: "Технологии, творчество и новый опыт.",
-        factThreeTitle: "Цель",
-        factThreeText: "Добиваться больших результатов в будущем.",
+        factOneTitle: "Технологии",
+        factOneText: "Программирование и компьютерные технологии.",
+        factTwoTitle: "Маркетинг",
+        factTwoText: "Маркетинг и развитие личного бренда.",
+        factThreeTitle: "Творчество",
+        factThreeText: "Музыка и пение.",
+
+        personalLabel: "ЛИЧНАЯ ИНФОРМАЦИЯ",
+        birthLabel: "Дата рождения",
+        birthValue: "29 августа 2007 года",
+        birthPlaceLabel: "Место рождения",
+        birthPlaceValue: "Узунбулок, Галляарал, Джизак",
+        roleLabel: "Статус",
+        roleValue: "Студент | Будущий маркетолог и программист",
+        interestsLabel: "Интересы",
+        interestsValue: "Программирование, компьютерные технологии, пение",
+        goalLabel: "Цель на будущее",
+        goalValue: "Создать личный бренд и стать сильным программистом",
 
         journeyLabel: "МОЙ ПУТЬ",
-        journeyTitle: "Каждый шаг имеет значение.",
-        journeyText: "Развитие — это постоянный процесс.",
-
+        journeyTitle: "Моя история",
+        journeyText: "Из прошлого через настоящее к будущему.",
         timeOneTitle: "Начало",
-        timeOneText: "Первые шаги к новым знаниям и опыту.",
-        timeTwoTitle: "Развитие",
-        timeTwoText: "Обучение, поиск и работа над собой.",
-        timeThreeTitle: "Будущее",
-        timeThreeText: "К большим целям и новым достижениям.",
+        timeOneText: "Я родился 29 августа в селе Узунбулок Джизакской области.",
+        timeTwoDate: "Сегодня",
+        timeTwoTitle: "Обучение",
+        timeTwoText: "Получаю образование, изучаю новые знания и технологии.",
+        timeThreeDate: "Будущее",
+        timeThreeTitle: "Цели",
+        timeThreeText: "Стать хорошим программистом и маркетологом, создать личный бренд.",
 
         galleryLabel: "ГАЛЕРЕЯ",
-        galleryTitle: "Воспоминания и моменты.",
-        galleryText: "Моменты моей жизни, которые хочется помнить.",
-        galleryHint: "Нажмите на фотографию, чтобы увеличить её.",
+        galleryTitle: "Памятные моменты",
+        galleryText: "Небольшие фрагменты моей жизни.",
 
         contactLabel: "КОНТАКТЫ",
-        contactEyebrow: "Давайте общаться.",
-        contactTitle: "Всегда открыт новым знакомствам.",
-        contactText: "Вы можете связаться со мной через социальные сети ниже.",
-        socialHint: "Мои социальные сети.",
+        contactEyebrow: "ДАВАЙТЕ БУДЕМ НА СВЯЗИ",
+        contactTitle: "Любая хорошая идея начинается с разговора.",
+        contactText: "Вы можете связаться со мной через социальные сети.",
 
         backTop: "Наверх ↑",
-        missingPhoto: "Фото",
-
-        birthValue: "2000",
-        birthPlaceValue: "Узбекистан",
-        roleValue: "Маркетолог",
-        interestsValue: "Технологии, творчество",
-        goalValue: "Развитие"
+        footerText: "Все права защищены.",
+        missingPhoto: "Фото"
     }
-
 };
 
 
@@ -233,47 +239,37 @@ function saveValue(key, value) {
 ===================================== */
 
 function applyLanguage(language) {
-
     if (!translations[language]) {
         language = "uz";
     }
 
-    document.documentElement.lang = language;
-
     const words = translations[language];
 
-    document.querySelectorAll("[data-i18n]").forEach((element) => {
+    document.documentElement.lang = language;
 
+    document.querySelectorAll("[data-i18n]").forEach(element => {
         const key = element.dataset.i18n;
 
         if (Object.prototype.hasOwnProperty.call(words, key)) {
             element.textContent = words[key];
         }
-
     });
 
-
-    document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
-
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(element => {
         const key = element.dataset.i18nPlaceholder;
 
         if (Object.prototype.hasOwnProperty.call(words, key)) {
             element.placeholder = words[key];
         }
-
     });
 
-
-    document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
-
+    document.querySelectorAll("[data-i18n-alt]").forEach(element => {
         const key = element.dataset.i18nAlt;
 
         if (Object.prototype.hasOwnProperty.call(words, key)) {
             element.alt = words[key];
         }
-
     });
-
 
     const languageSelect = document.querySelector("#language");
 
@@ -282,7 +278,6 @@ function applyLanguage(language) {
     }
 
     saveValue("portfolio-language", language);
-
 }
 
 
@@ -291,7 +286,6 @@ function applyLanguage(language) {
 ===================================== */
 
 function applyTheme(theme) {
-
     const isLight = theme === "light";
 
     document.body.classList.toggle("light-theme", isLight);
@@ -299,7 +293,6 @@ function applyTheme(theme) {
     const themeButton = document.querySelector("#themeToggle");
 
     if (themeButton) {
-
         themeButton.textContent = isLight ? "☾" : "☀";
 
         themeButton.setAttribute(
@@ -307,15 +300,10 @@ function applyTheme(theme) {
             isLight ? "Tungi rejimga o‘tish" : "Kunduzgi rejimga o‘tish"
         );
 
-        themeButton.setAttribute(
-            "aria-pressed",
-            String(isLight)
-        );
-
+        themeButton.setAttribute("aria-pressed", String(isLight));
     }
 
     saveValue("portfolio-theme", theme);
-
 }
 
 
@@ -324,67 +312,42 @@ function applyTheme(theme) {
 ===================================== */
 
 function initializeMobileMenu() {
-
     const menuButton = document.querySelector("#menuToggle");
     const navigation = document.querySelector("#navLinks");
 
-    if (!menuButton || !navigation) {
-        return;
-    }
+    if (!menuButton || !navigation) return;
 
     function closeMenu() {
-
         navigation.classList.remove("open");
-
         menuButton.setAttribute("aria-expanded", "false");
-
         menuButton.textContent = "☰";
-
     }
 
-    menuButton.addEventListener("click", (event) => {
-
+    menuButton.addEventListener("click", event => {
         event.stopPropagation();
 
         const isOpen = navigation.classList.toggle("open");
 
-        menuButton.setAttribute(
-            "aria-expanded",
-            String(isOpen)
-        );
-
+        menuButton.setAttribute("aria-expanded", String(isOpen));
         menuButton.textContent = isOpen ? "×" : "☰";
-
     });
 
-
-    navigation.querySelectorAll("a").forEach((link) => {
-
+    navigation.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", closeMenu);
-
     });
 
-
-    document.addEventListener("click", (event) => {
-
+    document.addEventListener("click", event => {
         if (
             !navigation.contains(event.target) &&
             !menuButton.contains(event.target)
         ) {
             closeMenu();
         }
-
     });
 
-
-    document.addEventListener("keydown", (event) => {
-
-        if (event.key === "Escape") {
-            closeMenu();
-        }
-
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") closeMenu();
     });
-
 }
 
 
@@ -393,7 +356,6 @@ function initializeMobileMenu() {
 ===================================== */
 
 function initializeGallery() {
-
     const lightbox = document.querySelector("#lightbox");
     const lightboxImage = document.querySelector("#lightboxImage");
     const lightboxCaption = document.querySelector("#lightboxCaption");
@@ -413,70 +375,44 @@ function initializeGallery() {
         !previousButton ||
         !nextButton ||
         galleryItems.length === 0
-    ) {
-        return;
-    }
+    ) return;
 
     let currentPhoto = 0;
     let lastFocusedElement = null;
 
-
     function showPhoto(index) {
-
-        if (index < 0) {
-            index = galleryItems.length - 1;
-        }
-
-        if (index >= galleryItems.length) {
-            index = 0;
-        }
-
-        currentPhoto = index;
+        currentPhoto = (index + galleryItems.length) % galleryItems.length;
 
         const item = galleryItems[currentPhoto];
-
         const image = item.querySelector("img");
 
-        if (!image) {
-            return;
-        }
+        if (!image) return;
 
         lightboxImage.src = image.src;
         lightboxImage.alt = image.alt;
 
         if (lightboxCaption) {
-
             const language = getSavedValue("portfolio-language", "uz");
-
-            const photoText = translations[language]?.missingPhoto || "Surat";
+            const photoText = translations[language]?.missingPhoto || "Photo";
 
             lightboxCaption.textContent =
                 image.alt || `${photoText} ${currentPhoto + 1}`;
-
         }
-
     }
 
-
     function openLightbox(index) {
-
         lastFocusedElement = document.activeElement;
 
         showPhoto(index);
 
         lightbox.hidden = false;
-
         document.body.classList.add("lightbox-open");
 
         closeButton.focus();
-
     }
 
-
     function closeLightbox() {
-
         lightbox.hidden = true;
-
         document.body.classList.remove("lightbox-open");
 
         lightboxImage.src = "";
@@ -484,71 +420,41 @@ function initializeGallery() {
         if (lastFocusedElement) {
             lastFocusedElement.focus();
         }
-
     }
 
-
     galleryItems.forEach((item, index) => {
-
         item.addEventListener("click", () => {
-
             const photoIndex = Number(item.dataset.photo);
 
             openLightbox(
                 Number.isInteger(photoIndex) ? photoIndex : index
             );
-
         });
-
     });
-
 
     closeButton.addEventListener("click", closeLightbox);
 
-
     previousButton.addEventListener("click", () => {
-
         showPhoto(currentPhoto - 1);
-
     });
-
 
     nextButton.addEventListener("click", () => {
-
         showPhoto(currentPhoto + 1);
-
     });
 
-
-    lightbox.addEventListener("click", (event) => {
-
+    lightbox.addEventListener("click", event => {
         if (event.target === lightbox) {
             closeLightbox();
         }
-
     });
 
+    document.addEventListener("keydown", event => {
+        if (lightbox.hidden) return;
 
-    document.addEventListener("keydown", (event) => {
-
-        if (lightbox.hidden) {
-            return;
-        }
-
-        if (event.key === "Escape") {
-            closeLightbox();
-        }
-
-        if (event.key === "ArrowLeft") {
-            showPhoto(currentPhoto - 1);
-        }
-
-        if (event.key === "ArrowRight") {
-            showPhoto(currentPhoto + 1);
-        }
-
+        if (event.key === "Escape") closeLightbox();
+        if (event.key === "ArrowLeft") showPhoto(currentPhoto - 1);
+        if (event.key === "ArrowRight") showPhoto(currentPhoto + 1);
     });
-
 }
 
 
@@ -557,30 +463,18 @@ function initializeGallery() {
 ===================================== */
 
 function initializeSocialLinks() {
-
     const socialLinks = {
-
         instagram: "https://instagram.com/_khayitboyevv_x17_",
-
         telegram: "https://t.me/khayitboyevv_oo7"
-
     };
 
-
     Object.entries(socialLinks).forEach(([name, url]) => {
-
-        document.querySelectorAll(`[data-social="${name}"]`).forEach((link) => {
-
+        document.querySelectorAll(`[data-social="${name}"]`).forEach(link => {
             link.href = url;
-
             link.target = "_blank";
-
             link.rel = "noopener noreferrer";
-
         });
-
     });
-
 }
 
 
@@ -589,15 +483,13 @@ function initializeSocialLinks() {
 ===================================== */
 
 function updateCurrentYear() {
-
-    const yearElement = document.querySelector("#currentYear");
+    const yearElement =
+        document.querySelector("#year") ||
+        document.querySelector("#currentYear");
 
     if (yearElement) {
-
         yearElement.textContent = new Date().getFullYear();
-
     }
-
 }
 
 
@@ -606,64 +498,36 @@ function updateCurrentYear() {
 ===================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
-
-    // Saved language
-    const savedLanguage = getSavedValue(
-        "portfolio-language",
-        "uz"
+    applyLanguage(
+        getSavedValue("portfolio-language", "uz")
     );
 
-    applyLanguage(savedLanguage);
-
-
-    // Saved theme
-    const savedTheme = getSavedValue(
-        "portfolio-theme",
-        "dark"
+    applyTheme(
+        getSavedValue("portfolio-theme", "dark")
     );
 
-    applyTheme(savedTheme);
-
-
-    // Language selector
     const languageSelect = document.querySelector("#language");
 
     if (languageSelect) {
-
-        languageSelect.addEventListener("change", (event) => {
-
+        languageSelect.addEventListener("change", event => {
             applyLanguage(event.target.value);
-
         });
-
     }
 
-
-    // Theme button
     const themeButton = document.querySelector("#themeToggle");
 
     if (themeButton) {
-
         themeButton.addEventListener("click", () => {
-
             const isLight = document.body.classList.contains("light-theme");
 
             applyTheme(isLight ? "dark" : "light");
-
         });
-
     }
 
-
-    // Initialize other features
     initializeMobileMenu();
-
     initializeGallery();
-
     initializeSocialLinks();
-
     updateCurrentYear();
 
     console.log("KHAYITBOYEVV website successfully initialized.");
-
 });
