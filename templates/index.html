@@ -2,321 +2,372 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0b0b14">
-    <meta name="description" content="Abdulla Hayitboyev — Khayitboyevv. Shaxsiy portfolio va hayot yo'li.">
-    <title>Abdulla Hayitboyev | Khayitboyevv</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b14">
+  <meta name="description" content="Abdulla Hayitboyev — shaxsiy portfolio">
+  <title>Abdulla Hayitboyev | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-inner">
-            <a href="#home" class="logo">
-                <img src="{{ url_for('static', filename='images/logo.png') }}"
-                     alt="Khayitboyevv logo" class="logo-image">
-                <span>Khayitboyevv<span class="accent">.</span></span>
+  <div class="page-glow page-glow-one"></div>
+  <div class="page-glow page-glow-two"></div>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#home">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="brand-logo">
+        <span>KHAYITBOYEV<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home" data-i18n="navHome">Bosh sahifa</a>
+        <a href="#about" data-i18n="navAbout">Men haqimda</a>
+        <a href="#journey" data-i18n="navJourney">Yo‘lim</a>
+        <a href="#gallery" data-i18n="navGallery">Galereya</a>
+        <a href="#contact" data-i18n="navContact">Aloqa</a>
+      </nav>
+
+      <div class="header-tools">
+        <select id="languageSelect" class="language-select" aria-label="Tilni tanlash">
+          <option value="uz">UZ</option>
+          <option value="en">EN</option>
+          <option value="ru">RU</option>
+        </select>
+
+        <button class="tool-button" id="themeToggle" type="button">☼</button>
+        <button class="tool-button menu-toggle" id="menuToggle" type="button">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section-wrap" id="home">
+      <div class="hero-content">
+        <div class="availability">
+          <span class="availability-dot"></span>
+          <span data-i18n="availability">Yangi imkoniyatlarga ochiqman</span>
+        </div>
+
+        <p class="hero-kicker" data-i18n="heroKicker">Salom, men</p>
+
+        <h1>Abdulla <span class="gradient-text">Hayitboyev</span></h1>
+
+        <p class="hero-role" data-i18n="heroRole">
+          Bo‘lajak marketolog <span>•</span> Dasturchi
+        </p>
+
+        <p class="hero-description" data-i18n="heroDescription">
+          G‘oyalarni foydali loyihalarga aylantirishga intilaman.
+          Marketing, texnologiya va ijod kesishgan nuqtada o‘z
+          yo‘limni qurmoqdaman.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">
+            <span data-i18n="contactMe">Men bilan bog‘laning</span>
+            <span>↗</span>
+          </a>
+
+          <a class="button button-ghost" href="#about" data-i18n="discover">
+            Men haqimda
+          </a>
+        </div>
+
+        <div class="hero-facts">
+          <div>
+            <strong>2007</strong>
+            <span data-i18n="born">Tug‘ilgan yil</span>
+          </div>
+
+          <div>
+            <strong>Jizzax</strong>
+            <span data-i18n="based">O‘zbekiston</span>
+          </div>
+
+          <div>
+            <strong>∞</strong>
+            <span data-i18n="curiosity">Qiziqish va izlanish</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-orbit orbit-a"></div>
+        <div class="visual-orbit orbit-b"></div>
+
+        <div class="portrait-card">
+          <div class="portrait-topline">
+            <span>PERSONAL PORTFOLIO</span>
+            <span>01 / 04</span>
+          </div>
+
+          <img
+            src="{{ url_for('static', filename='images/profile.jpg') }}"
+            alt="Abdulla Hayitboyev"
+            class="profile-photo"
+          >
+
+          <div class="portrait-bottom">
+            <span class="portrait-monogram">AH.</span>
+            <span>
+              <strong>Abdulla Hayitboyev</strong>
+              <small>MARKETING · TECHNOLOGY</small>
+            </span>
+          </div>
+        </div>
+
+        <div class="floating-chip chip-top">✦ Creative mind</div>
+        <div class="floating-chip chip-bottom">⌘ Always learning</div>
+
+        <div class="visual-spark spark-one">✳</div>
+        <div class="visual-spark spark-two">✦</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section-wrap section-block" id="about">
+      <div class="section-heading">
+        <p class="section-eyebrow" data-i18n="aboutEyebrow">TANISHUV</p>
+        <h2 data-i18n="aboutTitle">Men haqimda</h2>
+        <p data-i18n="aboutLead">
+          Maqsadlarim, qiziqishlarim va o‘zim haqimda qisqacha.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <article class="about-story glass-card">
+          <span class="card-index">01 / ABOUT</span>
+          <div class="story-mark">“</div>
+
+          <h3 data-i18n="storyTitle">O‘rganishdan to‘xtamayman.</h3>
+
+          <p data-i18n="storyText">
+            Men Abdulla Hayitboyevman. Hozirda bilim va tajribamni
+            oshirib, marketing hamda dasturlash yo‘nalishlarida
+            rivojlanmoqdaman. Har bir yangi loyiha — o‘zimni sinash
+            va yangi ko‘nikma egallash uchun imkoniyat.
+          </p>
+
+          <div class="story-line"></div>
+          <span class="story-signature">Abdulla.</span>
+        </article>
+
+        <div class="strength-grid">
+          <article class="strength-card">
+            <span class="strength-icon">◈</span>
+            <span class="card-index">01</span>
+            <h3 data-i18n="skillOneTitle">Marketing</h3>
+            <p data-i18n="skillOneText">Brend, auditoriya va kreativ g‘oyalar.</p>
+          </article>
+
+          <article class="strength-card">
+            <span class="strength-icon">⌘</span>
+            <span class="card-index">02</span>
+            <h3 data-i18n="skillTwoTitle">Dasturlash</h3>
+            <p data-i18n="skillTwoText">Kod, web va raqamli yechimlar.</p>
+          </article>
+
+          <article class="strength-card">
+            <span class="strength-icon">♫</span>
+            <span class="card-index">03</span>
+            <h3 data-i18n="skillThreeTitle">Musiqa</h3>
+            <p data-i18n="skillThreeText">Qo‘shiq aytish va ijodiy ifoda.</p>
+          </article>
+
+          <article class="strength-card">
+            <span class="strength-icon">✧</span>
+            <span class="card-index">04</span>
+            <h3 data-i18n="skillFourTitle">Texnologiya</h3>
+            <p data-i18n="skillFourText">Kompyuterlar va yangi texnologiyalar.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="details-row">
+        <div class="detail-item">
+          <span data-i18n="detailName">ISM</span>
+          <strong>Abdulla Hayitboyev</strong>
+        </div>
+
+        <div class="detail-item">
+          <span data-i18n="detailBirth">TUG‘ILGAN SANA</span>
+          <strong>29.08.2007</strong>
+        </div>
+
+        <div class="detail-item">
+          <span data-i18n="detailPlace">TUG‘ILGAN JOY</span>
+          <strong data-i18n="birthPlace">Uzunbuloq, G‘allaorol, Jizzax</strong>
+        </div>
+
+        <div class="detail-item">
+          <span data-i18n="detailFocus">ASOSIY MAQSAD</span>
+          <strong data-i18n="goal">Kuchli mutaxassis bo‘lish</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="journey section-wrap section-block" id="journey">
+      <div class="section-heading heading-row">
+        <div>
+          <p class="section-eyebrow" data-i18n="journeyEyebrow">RIVOJLANISH</p>
+          <h2 data-i18n="journeyTitle">Mening yo‘lim</h2>
+        </div>
+
+        <p data-i18n="journeyLead">
+          Har bir qadam — kelajakdagi katta maqsadlar sari.
+        </p>
+      </div>
+
+      <div class="journey-list">
+        <article class="journey-item">
+          <span class="journey-marker">01</span>
+          <div class="journey-content">
+            <span class="journey-label" data-i18n="journeyNow">HOZIR</span>
+            <h3 data-i18n="journeyOneTitle">Bilim va tajriba to‘plash</h3>
+            <p data-i18n="journeyOneText">
+              Marketing, dasturlash va kompyuter texnologiyalarini
+              o‘rganish, amaliy loyihalar ustida ishlash.
+            </p>
+          </div>
+          <span class="journey-arrow">↗</span>
+        </article>
+
+        <article class="journey-item">
+          <span class="journey-marker">02</span>
+          <div class="journey-content">
+            <span class="journey-label" data-i18n="journeyNext">KEYINGI QADAM</span>
+            <h3 data-i18n="journeyTwoTitle">Shaxsiy brendni rivojlantirish</h3>
+            <p data-i18n="journeyTwoText">
+              O‘z ishlarimni namoyish etish, foydali kontent yaratish
+              va professional aloqalarni kengaytirish.
+            </p>
+          </div>
+          <span class="journey-arrow">↗</span>
+        </article>
+
+        <article class="journey-item">
+          <span class="journey-marker">03</span>
+          <div class="journey-content">
+            <span class="journey-label" data-i18n="journeyGoal">KATTA MAQSAD</span>
+            <h3 data-i18n="journeyThreeTitle">Malakali mutaxassisga aylanish</h3>
+            <p data-i18n="journeyThreeText">
+              Kuchli loyihalar yaratish va o‘z sohamda haqiqiy
+              qiymat bera olish.
+            </p>
+          </div>
+          <span class="journey-arrow">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery section-wrap section-block" id="gallery">
+      <div class="section-heading heading-row">
+        <div>
+          <p class="section-eyebrow" data-i18n="galleryEyebrow">LAHZALAR</p>
+          <h2 data-i18n="galleryTitle">Galereya</h2>
+        </div>
+
+        <p data-i18n="galleryLead">Hayotimdan ayrim kadrlar.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <button class="gallery-card gallery-card-large" type="button" data-gallery-index="0">
+          <img src="{{ url_for('static', filename='images/photo-1.jpg') }}" alt="Galereya rasmi 1">
+          <span class="gallery-caption">01 <span>PERSONAL MOMENT</span></span>
+          <span class="gallery-expand">↗</span>
+        </button>
+
+        <button class="gallery-card" type="button" data-gallery-index="1">
+          <img src="{{ url_for('static', filename='images/photo-2.jpg') }}" alt="Galereya rasmi 2">
+          <span class="gallery-caption">02 <span>MEMORIES</span></span>
+          <span class="gallery-expand">↗</span>
+        </button>
+
+        <button class="gallery-card" type="button" data-gallery-index="2">
+          <img src="{{ url_for('static', filename='images/photo-3.jpg') }}" alt="Galereya rasmi 3">
+          <span class="gallery-caption">03 <span>EVERYDAY</span></span>
+          <span class="gallery-expand">↗</span>
+        </button>
+
+        <button class="gallery-card gallery-card-wide" type="button" data-gallery-index="3">
+          <img src="{{ url_for('static', filename='images/photo-4.jpg') }}" alt="Galereya rasmi 4">
+          <span class="gallery-caption">04 <span>MY WORLD</span></span>
+          <span class="gallery-expand">↗</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section-wrap section-block" id="contact">
+      <div class="contact-panel">
+        <div class="contact-decoration">
+          LET'S<br>CONNECT<span>.</span>
+        </div>
+
+        <div class="contact-copy">
+          <p class="section-eyebrow" data-i18n="contactEyebrow">ALOQA</p>
+          <h2 data-i18n="contactTitle">Biror loyiha yoki g‘oya bormi?</h2>
+          <p data-i18n="contactText">
+            Hamkorlik, taklif yoki shunchaki suhbat uchun men bilan bog‘laning.
+          </p>
+
+          <div class="contact-links">
+            <a href="https://instagram.com/_khayitboyevv_x17_" target="_blank" rel="noopener noreferrer">
+              <span class="social-symbol">◎</span>
+              <span>
+                <small>INSTAGRAM</small>
+                <strong>@_khayitboyevv_x17_</strong>
+              </span>
+              <span class="external-arrow">↗</span>
             </a>
 
-            <nav class="nav" id="navLinks">
-                <a href="#home" data-i18n="navHome">Bosh sahifa</a>
-                <a href="#about" data-i18n="navAbout">Men haqimda</a>
-                <a href="#journey" data-i18n="navJourney">Hayot yo‘lim</a>
-                <a href="#gallery" data-i18n="navGallery">Galereya</a>
-                <a href="#contact" data-i18n="navContact">Aloqa</a>
-            </nav>
-
-            <div class="header-actions">
-                <select id="language" aria-label="Tilni tanlash">
-                    <option value="uz">UZ</option>
-                    <option value="en">EN</option>
-                    <option value="ru">RU</option>
-                </select>
-
-                <button class="icon-button" id="themeToggle" aria-label="Mavzuni almashtirish">☼</button>
-                <button class="icon-button menu-toggle" id="menuToggle"
-                        aria-label="Menyuni ochish" aria-expanded="false">☰</button>
-            </div>
+            <a href="https://t.me/khayitboyevv_oo7" target="_blank" rel="noopener noreferrer">
+              <span class="social-symbol">➤</span>
+              <span>
+                <small>TELEGRAM</small>
+                <strong>@khayitboyevv_oo7</strong>
+              </span>
+              <span class="external-arrow">↗</span>
+            </a>
+          </div>
         </div>
-    </header>
+      </div>
+    </section>
+  </main>
 
-    <main>
-        <section class="hero section" id="home">
-            <div class="hero-copy">
-                <div class="eyebrow">
-                    <span class="status-dot"></span>
-                    <span data-i18n="heroLabel">SHAXSIY PORTFOLIO</span>
-                </div>
+  <footer class="site-footer section-wrap">
+    <a class="brand footer-brand" href="#home">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="" class="brand-logo">
+      <span>KHAYITBOYEV<span class="brand-dot">.</span></span>
+    </a>
 
-                <p class="intro" data-i18n="heroIntro">Salom, men</p>
+    <p>© <span id="currentYear"></span> Abdulla Hayitboyev. <span data-i18n="rights">Barcha huquqlar himoyalangan.</span></p>
 
-                <h1 data-i18n="heroTitle">
-                    Abdulla <span class="accent">Hayitboyev</span>
-                </h1>
+    <a class="back-to-top" href="#top" aria-label="Yuqoriga qaytish">↑</a>
+  </footer>
 
-                <p class="hero-description" data-i18n="heroText">
-                    Men — Abdulla Hayitboyev, internetda Khayitboyevv nomi bilan tanilganman.
-                    Dasturlash, texnologiyalar va marketingga qiziqaman.
-                </p>
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button">×</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" type="button">‹</button>
 
-                <div class="hero-buttons">
-                    <a href="#about" class="button button-primary" data-i18n="heroButton">
-                        Men haqimda
-                    </a>
-                    <a href="#contact" class="button button-secondary" data-i18n="contactButton">
-                        Bog‘lanish
-                    </a>
-                </div>
+    <figure>
+      <img id="lightboxImage" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
 
-                <div class="hero-meta">
-                    <div>
-                        <strong class="meta-number">2007</strong>
-                        <span data-i18n="metaOne">Tug‘ilgan yilim</span>
-                    </div>
-                    <div>
-                        <strong class="meta-number">JIZZAХ</strong>
-                        <span data-i18n="metaTwo">O‘zbekiston</span>
-                    </div>
-                    <div>
-                        <strong class="meta-number">∞</strong>
-                        <span data-i18n="metaThree">Katta maqsadlar</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-art">
-                <div class="orbit orbit-one"></div>
-                <div class="orbit orbit-two"></div>
-
-                <div class="portrait-frame">
-                    <div class="portrait-placeholder">
-                        <img src="{{ url_for('static', filename='images/profile.jpg') }}"
-                             alt="Abdulla Hayitboyev"
-                             onerror="this.style.display='none'">
-                        <span class="portrait-fallback">KH.</span>
-                    </div>
-                    <div class="portrait-caption" data-i18n="portraitCaption">
-                        ABDULLA HAYITBOYEV
-                    </div>
-                </div>
-
-                <div class="floating-mark">✦</div>
-            </div>
-        </section>
-
-        <section class="about-section section" id="about">
-            <div class="section-label">
-                <span>01 /</span>
-                <span data-i18n="aboutLabel">MEN HAQIMDA</span>
-            </div>
-
-            <div class="about-layout">
-                <div class="about-copy">
-                    <h2 class="section-title" data-i18n="aboutTitle">
-                        Har bir insonning o‘z <span class="accent">hikoyasi</span> bor.
-                    </h2>
-
-                    <p data-i18n="aboutText">
-                        Men — Abdulla Hayitboyev. Internetda Khayitboyevv nomi bilan tanilganman.
-                        Yangi bilimlarni o‘rganish, dasturlash, kompyuter texnologiyalari va
-                        marketing sohalariga qiziqaman. Kelajakda o‘z sohamning yetuk
-                        mutaxassisi bo‘lishni maqsad qilganman.
-                    </p>
-
-                    <p class="edit-hint" data-i18n="editHint">
-                        Bu sahifa mening shaxsiy hayotim, qiziqishlarim va maqsadlarim haqida.
-                    </p>
-                </div>
-
-                <div class="facts-grid">
-                    <article class="fact-card">
-                        <span class="fact-index">01</span>
-                        <span class="fact-icon">💻</span>
-                        <h3 data-i18n="factOneTitle">Texnologiya</h3>
-                        <p data-i18n="factOneText">Dasturlash va kompyuter texnologiyalari.</p>
-                    </article>
-
-                    <article class="fact-card">
-                        <span class="fact-index">02</span>
-                        <span class="fact-icon">📈</span>
-                        <h3 data-i18n="factTwoTitle">Marketing</h3>
-                        <p data-i18n="factTwoText">Marketing va shaxsiy brend rivojlantirish.</p>
-                    </article>
-
-                    <article class="fact-card">
-                        <span class="fact-index">03</span>
-                        <span class="fact-icon">🎵</span>
-                        <h3 data-i18n="factThreeTitle">Ijod</h3>
-                        <p data-i18n="factThreeText">Musiqa va qo‘shiq kuylash.</p>
-                    </article>
-                </div>
-            </div>
-
-            <div class="personal-info">
-                <div class="section-label">
-                    <span>01.1 /</span>
-                    <span data-i18n="personalLabel">SHAXSIY MA'LUMOTLAR</span>
-                </div>
-
-                <div class="personal-info-grid">
-                    <article class="info-card">
-                        <span class="info-icon">🎂</span>
-                        <span class="info-label" data-i18n="birthLabel">Tug‘ilgan sana</span>
-                        <strong data-i18n="birthValue">29-avgust 2007-yil</strong>
-                    </article>
-
-                    <article class="info-card">
-                        <span class="info-icon">📍</span>
-                        <span class="info-label" data-i18n="birthPlaceLabel">Tug‘ilgan joy</span>
-                        <strong data-i18n="birthPlaceValue">Uzunbuloq, G‘allaorol, Jizzax</strong>
-                    </article>
-
-                    <article class="info-card">
-                        <span class="info-icon">💻</span>
-                        <span class="info-label" data-i18n="roleLabel">Maqomim</span>
-                        <strong data-i18n="roleValue">Talaba | Bo‘lajak marketolog va dasturchi</strong>
-                    </article>
-
-                    <article class="info-card">
-                        <span class="info-icon">✦</span>
-                        <span class="info-label" data-i18n="interestsLabel">Qiziqishlarim</span>
-                        <strong data-i18n="interestsValue">Dasturlash, kompyuter texnologiyalari, qo‘shiq kuylash</strong>
-                    </article>
-
-                    <article class="info-card">
-                        <span class="info-icon">🚀</span>
-                        <span class="info-label" data-i18n="goalLabel">Kelajakdagi maqsadim</span>
-                        <strong data-i18n="goalValue">Shaxsiy brend yaratish va kuchli dasturchi bo‘lish</strong>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="journey-section section" id="journey">
-            <div class="section-label">
-                <span>02 /</span>
-                <span data-i18n="journeyLabel">HAYOT YO‘LIM</span>
-            </div>
-
-            <div class="journey-heading">
-                <h2 class="section-title" data-i18n="journeyTitle">
-                    Mening <span class="accent">hikoyam</span>
-                </h2>
-                <p data-i18n="journeyText">O‘tmish, bugun va kelajak sari.</p>
-            </div>
-
-            <div class="timeline">
-                <article class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2007</div>
-                    <div class="timeline-card">
-                        <span class="timeline-number">01</span>
-                        <h3 data-i18n="timeOneTitle">Boshlanish</h3>
-                        <p data-i18n="timeOneText">29-avgust kuni Jizzax viloyatining Uzunbuloq qishlog‘ida tug‘ilganman.</p>
-                    </div>
-                </article>
-
-                <article class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date" data-i18n="timeTwoDate">Bugun</div>
-                    <div class="timeline-card">
-                        <span class="timeline-number">02</span>
-                        <h3 data-i18n="timeTwoTitle">O‘rganish</h3>
-                        <p data-i18n="timeTwoText">Ta’lim olyapman, yangi bilimlar va texnologiyalarni o‘rganyapman.</p>
-                    </div>
-                </article>
-
-                <article class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date" data-i18n="timeThreeDate">Kelajak</div>
-                    <div class="timeline-card">
-                        <span class="timeline-number">03</span>
-                        <h3 data-i18n="timeThreeTitle">Maqsadlar</h3>
-                        <p data-i18n="timeThreeText">Kuchli dasturchi va marketolog bo‘lish, shaxsiy brend yaratish.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="gallery-section section" id="gallery">
-            <div class="section-label">
-                <span>03 /</span>
-                <span data-i18n="galleryLabel">GALEREYA</span>
-            </div>
-
-            <div class="journey-heading">
-                <h2 class="section-title" data-i18n="galleryTitle">
-                    Esda qolarli <span class="accent">lahzalar</span>
-                </h2>
-                <p data-i18n="galleryText">Hayotimdan kichik lavhalar.</p>
-            </div>
-
-            <div class="gallery-grid">
-                <button class="gallery-item gallery-large" data-photo="0" type="button">
-                    <img src="{{ url_for('static', filename='images/photo-1.jpg') }}" alt="Galereya rasmi 1">
-                    <span class="gallery-overlay">01 ↗</span>
-                </button>
-
-                <button class="gallery-item" data-photo="1" type="button">
-                    <img src="{{ url_for('static', filename='images/photo-2.jpg') }}" alt="Galereya rasmi 2">
-                    <span class="gallery-overlay">02 ↗</span>
-                </button>
-
-                <button class="gallery-item" data-photo="2" type="button">
-                    <img src="{{ url_for('static', filename='images/photo-3.jpg') }}" alt="Galereya rasmi 3">
-                    <span class="gallery-overlay">03 ↗</span>
-                </button>
-
-                <button class="gallery-item" data-photo="3" type="button">
-                    <img src="{{ url_for('static', filename='images/photo-4.jpg') }}" alt="Galereya rasmi 4">
-                    <span class="gallery-overlay">04 ↗</span>
-                </button>
-            </div>
-        </section>
-
-        <section class="contact-section section" id="contact">
-            <div class="section-label">
-                <span>04 /</span>
-                <span data-i18n="contactLabel">ALOQA</span>
-            </div>
-
-            <div class="contact-box">
-                <p class="eyebrow" data-i18n="contactEyebrow">BIRGA ALOQADA BO‘LAYLIK</p>
-                <h2 class="section-title" data-i18n="contactTitle">
-                    Har qanday yaxshi g‘oya <span class="accent">suhbatdan</span> boshlanadi.
-                </h2>
-                <p data-i18n="contactText">Men bilan ijtimoiy tarmoqlar orqali bog‘lanishingiz mumkin.</p>
-
-                <div class="social-links">
-                    <a href="https://instagram.com/_khayitboyevv_x17_"
-                       target="_blank" rel="noopener noreferrer"
-                       data-social="instagram">Instagram ↗</a>
-
-                    <a href="https://t.me/khayitboyevv_oo7"
-                       target="_blank" rel="noopener noreferrer"
-                       data-social="telegram">Telegram ↗</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <a href="#home" class="logo">Khayitboyevv<span class="accent">.</span></a>
-        <p>© <span id="year"></span> Abdulla Hayitboyev. <span data-i18n="footerText">Barcha huquqlar himoyalangan.</span></p>
-        <a href="#home" class="back-top" data-i18n="backTop">Yuqoriga ↑</a>
-    </footer>
-
-    <div class="lightbox" id="lightbox" role="dialog"
-         aria-modal="true" aria-label="Foto galereya" hidden>
-        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Yopish">×</button>
-        <button class="lightbox-arrow" id="prevPhoto" type="button" aria-label="Oldingi rasm">‹</button>
-        <figure>
-            <img id="lightboxImage" src="" alt="">
-            <figcaption id="lightboxCaption"></figcaption>
-        </figure>
-        <button class="lightbox-arrow" id="nextPhoto" type="button" aria-label="Keyingi rasm">›</button>
-    </div>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" type="button">›</button>
+  </div>
 </body>
 </html>
