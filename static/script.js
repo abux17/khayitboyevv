@@ -1,533 +1,371 @@
 
-/* =====================================
-   KHAYITBOYEVV - MAIN JAVASCRIPT
-===================================== */
+(() => {
+  "use strict";
 
-const translations = {
+  const translations = {
     uz: {
-        navHome: "Bosh sahifa",
-        navAbout: "Men haqimda",
-        navJourney: "Hayot yo‘lim",
-        navGallery: "Galereya",
-        navContact: "Aloqa",
-
-        heroLabel: "SHAXSIY PORTFOLIO",
-        heroIntro: "Salom, men",
-        heroTitle: "Abdulla Hayitboyev",
-        heroText: "Men — Abdulla Hayitboyev, internetda Khayitboyevv nomi bilan tanilganman. Dasturlash, texnologiyalar va marketingga qiziqaman.",
-        heroButton: "Men haqimda",
-        contactButton: "Bog‘lanish",
-
-        metaOne: "Tug‘ilgan yilim",
-        metaTwo: "O‘zbekiston",
-        metaThree: "Katta maqsadlar",
-        portraitCaption: "ABDULLA HAYITBOYEV",
-
-        aboutLabel: "MEN HAQIMDA",
-        aboutTitle: "Har bir insonning o‘z hikoyasi bor.",
-        aboutText: "Men — Abdulla Hayitboyev. Internetda Khayitboyevv nomi bilan tanilganman. Yangi bilimlarni o‘rganish, dasturlash, kompyuter texnologiyalari va marketing sohalariga qiziqaman. Kelajakda o‘z sohamning yetuk mutaxassisi bo‘lishni maqsad qilganman.",
-        editHint: "Har kuni o‘zimning yaxshiroq versiyam bo‘lishga intilaman.",
-
-        factOneTitle: "Texnologiya",
-        factOneText: "Dasturlash va kompyuter texnologiyalari.",
-        factTwoTitle: "Marketing",
-        factTwoText: "Marketing va shaxsiy brend rivojlantirish.",
-        factThreeTitle: "Ijod",
-        factThreeText: "Musiqa va qo‘shiq kuylash.",
-
-        personalLabel: "SHAXSIY MA'LUMOTLAR",
-        birthLabel: "Tug‘ilgan sana",
-        birthValue: "29-avgust 2007-yil",
-        birthPlaceLabel: "Tug‘ilgan joy",
-        birthPlaceValue: "Uzunbuloq, G‘allaorol, Jizzax",
-        roleLabel: "Maqomim",
-        roleValue: "Talaba | Bo‘lajak marketolog va dasturchi",
-        interestsLabel: "Qiziqishlarim",
-        interestsValue: "Dasturlash, kompyuter texnologiyalari, qo‘shiq kuylash",
-        goalLabel: "Kelajakdagi maqsadim",
-        goalValue: "Shaxsiy brend yaratish va kuchli dasturchi bo‘lish",
-
-        journeyLabel: "HAYOT YO‘LIM",
-        journeyTitle: "Mening hikoyam",
-        journeyText: "O‘tmish, bugun va kelajak sari.",
-        timeOneTitle: "Boshlanish",
-        timeOneText: "29-avgust kuni Jizzax viloyatining Uzunbuloq qishlog‘ida tug‘ilganman.",
-        timeTwoDate: "Bugun",
-        timeTwoTitle: "O‘rganish",
-        timeTwoText: "Ta’lim olyapman, yangi bilimlar va texnologiyalarni o‘rganyapman.",
-        timeThreeDate: "Kelajak",
-        timeThreeTitle: "Maqsadlar",
-        timeThreeText: "Kuchli dasturchi va marketolog bo‘lish, shaxsiy brend yaratish.",
-
-        galleryLabel: "GALEREYA",
-        galleryTitle: "Esda qolarli lahzalar",
-        galleryText: "Hayotimdan kichik lavhalar.",
-
-        contactLabel: "ALOQA",
-        contactEyebrow: "BIRGA ALOQADA BO‘LAYLIK",
-        contactTitle: "Har qanday yaxshi g‘oya suhbatdan boshlanadi.",
-        contactText: "Men bilan ijtimoiy tarmoqlar orqali bog‘lanishingiz mumkin.",
-
-        backTop: "Yuqoriga ↑",
-        footerText: "Barcha huquqlar himoyalangan.",
-        missingPhoto: "Surat"
+      navHome:"Bosh sahifa",
+      navAbout:"Men haqimda",
+      navJourney:"Yo‘lim",
+      navGallery:"Galereya",
+      navContact:"Aloqa",
+      availability:"Yangi imkoniyatlarga ochiqman",
+      heroKicker:"Salom, men",
+      heroRole:'Bo‘lajak marketolog <span>•</span> Dasturchi',
+      heroDescription:"G‘oyalarni foydali loyihalarga aylantirishga intilaman. Marketing, texnologiya va ijod kesishgan nuqtada o‘z yo‘limni qurmoqdaman.",
+      contactMe:"Men bilan bog‘laning",
+      discover:"Men haqimda",
+      born:"Tug‘ilgan yil",
+      based:"O‘zbekiston",
+      curiosity:"Qiziqish va izlanish",
+      aboutEyebrow:"TANISHUV",
+      aboutTitle:"Men haqimda",
+      aboutLead:"Maqsadlarim, qiziqishlarim va o‘zim haqimda qisqacha.",
+      storyTitle:"O‘rganishdan to‘xtamayman.",
+      storyText:"Men Abdulla Hayitboyevman. Hozirda bilim va tajribamni oshirib, marketing hamda dasturlash yo‘nalishlarida rivojlanmoqdaman. Har bir yangi loyiha — o‘zimni sinash va yangi ko‘nikma egallash uchun imkoniyat.",
+      skillOneTitle:"Marketing",
+      skillOneText:"Brend, auditoriya va kreativ g‘oyalar.",
+      skillTwoTitle:"Dasturlash",
+      skillTwoText:"Kod, web va raqamli yechimlar.",
+      skillThreeTitle:"Musiqa",
+      skillThreeText:"Qo‘shiq aytish va ijodiy ifoda.",
+      skillFourTitle:"Texnologiya",
+      skillFourText:"Kompyuterlar va yangi texnologiyalar.",
+      detailName:"ISM",
+      detailBirth:"TUG‘ILGAN SANA",
+      detailPlace:"TUG‘ILGAN JOY",
+      detailFocus:"ASOSIY MAQSAD",
+      birthPlace:"Uzunbuloq, G‘allaorol, Jizzax",
+      goal:"Kuchli mutaxassis bo‘lish",
+      journeyEyebrow:"RIVOJLANISH",
+      journeyTitle:"Mening yo‘lim",
+      journeyLead:"Har bir qadam — kelajakdagi katta maqsadlar sari.",
+      journeyNow:"HOZIR",
+      journeyNext:"KEYINGI QADAM",
+      journeyGoal:"KATTA MAQSAD",
+      journeyOneTitle:"Bilim va tajriba to‘plash",
+      journeyOneText:"Marketing, dasturlash va kompyuter texnologiyalarini o‘rganish, amaliy loyihalar ustida ishlash.",
+      journeyTwoTitle:"Shaxsiy brendni rivojlantirish",
+      journeyTwoText:"O‘z ishlarimni namoyish etish, foydali kontent yaratish va professional aloqalarni kengaytirish.",
+      journeyThreeTitle:"Malakali mutaxassisga aylanish",
+      journeyThreeText:"Kuchli loyihalar yaratish va o‘z sohamda haqiqiy qiymat bera olish.",
+      galleryEyebrow:"LAHZALAR",
+      galleryTitle:"Galereya",
+      galleryLead:"Hayotimdan ayrim kadrlar.",
+      contactEyebrow:"ALOQA",
+      contactTitle:"Biror loyiha yoki g‘oya bormi?",
+      contactText:"Hamkorlik, taklif yoki shunchaki suhbat uchun men bilan bog‘laning.",
+      rights:"Barcha huquqlar himoyalangan."
     },
 
     en: {
-        navHome: "Home",
-        navAbout: "About me",
-        navJourney: "My journey",
-        navGallery: "Gallery",
-        navContact: "Contact",
-
-        heroLabel: "PERSONAL PORTFOLIO",
-        heroIntro: "Hello, I'm",
-        heroTitle: "Abdulla Hayitboyev",
-        heroText: "I'm Abdulla Hayitboyev, known online as Khayitboyevv. I'm interested in programming, technology and marketing.",
-        heroButton: "About me",
-        contactButton: "Get in touch",
-
-        metaOne: "Birth year",
-        metaTwo: "Uzbekistan",
-        metaThree: "Big ambitions",
-        portraitCaption: "ABDULLA HAYITBOYEV",
-
-        aboutLabel: "ABOUT ME",
-        aboutTitle: "Everyone has their own story.",
-        aboutText: "I'm Abdulla Hayitboyev, known online as Khayitboyevv. I'm interested in learning new things, programming, computer technology and marketing. My goal is to become a skilled professional in my field.",
-        editHint: "Every day I strive to become a better version of myself.",
-
-        factOneTitle: "Technology",
-        factOneText: "Programming and computer technology.",
-        factTwoTitle: "Marketing",
-        factTwoText: "Marketing and personal brand development.",
-        factThreeTitle: "Creativity",
-        factThreeText: "Music and singing.",
-
-        personalLabel: "PERSONAL INFORMATION",
-        birthLabel: "Date of birth",
-        birthValue: "29 August 2007",
-        birthPlaceLabel: "Place of birth",
-        birthPlaceValue: "Uzunbuloq, Gallaorol, Jizzakh",
-        roleLabel: "Current status",
-        roleValue: "Student | Aspiring marketer and developer",
-        interestsLabel: "Interests",
-        interestsValue: "Programming, computer technology, singing",
-        goalLabel: "Future goal",
-        goalValue: "Building a personal brand and becoming a skilled developer",
-
-        journeyLabel: "MY JOURNEY",
-        journeyTitle: "My story",
-        journeyText: "From the past, through today, towards the future.",
-        timeOneTitle: "Beginning",
-        timeOneText: "I was born on 29 August in Uzunbuloq village, Jizzakh region.",
-        timeTwoDate: "Today",
-        timeTwoTitle: "Learning",
-        timeTwoText: "I'm studying and learning new skills and technologies.",
-        timeThreeDate: "Future",
-        timeThreeTitle: "Goals",
-        timeThreeText: "Becoming a skilled developer and marketer and building a personal brand.",
-
-        galleryLabel: "GALLERY",
-        galleryTitle: "Memorable moments",
-        galleryText: "A few glimpses from my life.",
-
-        contactLabel: "CONTACT",
-        contactEyebrow: "LET'S CONNECT",
-        contactTitle: "Every great idea begins with a conversation.",
-        contactText: "You can contact me through my social networks.",
-
-        backTop: "Back to top ↑",
-        footerText: "All rights reserved.",
-        missingPhoto: "Photo"
+      navHome:"Home",
+      navAbout:"About",
+      navJourney:"Journey",
+      navGallery:"Gallery",
+      navContact:"Contact",
+      availability:"Open to new opportunities",
+      heroKicker:"Hello, I'm",
+      heroRole:'Aspiring Marketer <span>•</span> Developer',
+      heroDescription:"I turn ideas into useful projects. I'm building my path where marketing, technology and creativity meet.",
+      contactMe:"Get in touch",
+      discover:"Discover more",
+      born:"Year of birth",
+      based:"Uzbekistan",
+      curiosity:"Curiosity & growth",
+      aboutEyebrow:"INTRODUCTION",
+      aboutTitle:"About me",
+      aboutLead:"A little about my goals, interests and personality.",
+      storyTitle:"Always learning.",
+      storyText:"I'm Abdulla Hayitboyev. I'm growing my knowledge and experience in marketing and software development. Every new project is a chance to challenge myself and gain a new skill.",
+      skillOneTitle:"Marketing",
+      skillOneText:"Brands, audiences and creative ideas.",
+      skillTwoTitle:"Development",
+      skillTwoText:"Code, web and digital solutions.",
+      skillThreeTitle:"Music",
+      skillThreeText:"Singing and creative expression.",
+      skillFourTitle:"Technology",
+      skillFourText:"Computers and emerging technology.",
+      detailName:"NAME",
+      detailBirth:"DATE OF BIRTH",
+      detailPlace:"PLACE OF BIRTH",
+      detailFocus:"MAIN GOAL",
+      birthPlace:"Uzunbuloq, Gallaorol, Jizzakh",
+      goal:"Become a skilled professional",
+      journeyEyebrow:"GROWTH",
+      journeyTitle:"My journey",
+      journeyLead:"Every step takes me closer to bigger goals.",
+      journeyNow:"CURRENTLY",
+      journeyNext:"NEXT STEP",
+      journeyGoal:"LONG-TERM GOAL",
+      journeyOneTitle:"Building knowledge and experience",
+      journeyOneText:"Learning marketing, programming and computer technology while working on practical projects.",
+      journeyTwoTitle:"Growing a personal brand",
+      journeyTwoText:"Showcasing my work, creating useful content and building professional connections.",
+      journeyThreeTitle:"Becoming a skilled professional",
+      journeyThreeText:"Creating meaningful projects and delivering real value in my field.",
+      galleryEyebrow:"MOMENTS",
+      galleryTitle:"Gallery",
+      galleryLead:"A few frames from my life.",
+      contactEyebrow:"CONTACT",
+      contactTitle:"Have a project or an idea?",
+      contactText:"Reach out for collaboration, suggestions or simply a conversation.",
+      rights:"All rights reserved."
     },
 
     ru: {
-        navHome: "Главная",
-        navAbout: "Обо мне",
-        navJourney: "Мой путь",
-        navGallery: "Галерея",
-        navContact: "Контакты",
-
-        heroLabel: "ЛИЧНОЕ ПОРТФОЛИО",
-        heroIntro: "Привет, я",
-        heroTitle: "Абдулла Хайитбоев",
-        heroText: "Я — Абдулла Хайитбоев, известный в интернете под именем Khayitboyevv. Интересуюсь программированием, технологиями и маркетингом.",
-        heroButton: "Обо мне",
-        contactButton: "Связаться",
-
-        metaOne: "Год рождения",
-        metaTwo: "Узбекистан",
-        metaThree: "Большие цели",
-        portraitCaption: "АБДУЛЛА ХАЙИТБОЕВ",
-
-        aboutLabel: "ОБО МНЕ",
-        aboutTitle: "У каждого человека своя история.",
-        aboutText: "Я — Абдулла Хайитбоев, известный в интернете как Khayitboyevv. Интересуюсь новыми знаниями, программированием, компьютерными технологиями и маркетингом. Моя цель — стать профессионалом в своей области.",
-        editHint: "Каждый день я стремлюсь стать лучше.",
-
-        factOneTitle: "Технологии",
-        factOneText: "Программирование и компьютерные технологии.",
-        factTwoTitle: "Маркетинг",
-        factTwoText: "Маркетинг и развитие личного бренда.",
-        factThreeTitle: "Творчество",
-        factThreeText: "Музыка и пение.",
-
-        personalLabel: "ЛИЧНАЯ ИНФОРМАЦИЯ",
-        birthLabel: "Дата рождения",
-        birthValue: "29 августа 2007 года",
-        birthPlaceLabel: "Место рождения",
-        birthPlaceValue: "Узунбулок, Галляарал, Джизак",
-        roleLabel: "Статус",
-        roleValue: "Студент | Будущий маркетолог и программист",
-        interestsLabel: "Интересы",
-        interestsValue: "Программирование, компьютерные технологии, пение",
-        goalLabel: "Цель на будущее",
-        goalValue: "Создать личный бренд и стать сильным программистом",
-
-        journeyLabel: "МОЙ ПУТЬ",
-        journeyTitle: "Моя история",
-        journeyText: "Из прошлого через настоящее к будущему.",
-        timeOneTitle: "Начало",
-        timeOneText: "Я родился 29 августа в селе Узунбулок Джизакской области.",
-        timeTwoDate: "Сегодня",
-        timeTwoTitle: "Обучение",
-        timeTwoText: "Получаю образование, изучаю новые знания и технологии.",
-        timeThreeDate: "Будущее",
-        timeThreeTitle: "Цели",
-        timeThreeText: "Стать хорошим программистом и маркетологом, создать личный бренд.",
-
-        galleryLabel: "ГАЛЕРЕЯ",
-        galleryTitle: "Памятные моменты",
-        galleryText: "Небольшие фрагменты моей жизни.",
-
-        contactLabel: "КОНТАКТЫ",
-        contactEyebrow: "ДАВАЙТЕ БУДЕМ НА СВЯЗИ",
-        contactTitle: "Любая хорошая идея начинается с разговора.",
-        contactText: "Вы можете связаться со мной через социальные сети.",
-
-        backTop: "Наверх ↑",
-        footerText: "Все права защищены.",
-        missingPhoto: "Фото"
+      navHome:"Главная",
+      navAbout:"Обо мне",
+      navJourney:"Мой путь",
+      navGallery:"Галерея",
+      navContact:"Контакты",
+      availability:"Открыт новым возможностям",
+      heroKicker:"Привет, я",
+      heroRole:'Будущий маркетолог <span>•</span> Разработчик',
+      heroDescription:"Стараюсь превращать идеи в полезные проекты. Развиваюсь на пересечении маркетинга, технологий и творчества.",
+      contactMe:"Связаться со мной",
+      discover:"Обо мне",
+      born:"Год рождения",
+      based:"Узбекистан",
+      curiosity:"Интерес и развитие",
+      aboutEyebrow:"ЗНАКОМСТВО",
+      aboutTitle:"Обо мне",
+      aboutLead:"Кратко о моих целях, интересах и увлечениях.",
+      storyTitle:"Я постоянно учусь.",
+      storyText:"Меня зовут Абдулла Хаитбоев. Я развиваю знания и опыт в маркетинге и программировании. Каждый новый проект — возможность проверить себя и освоить новый навык.",
+      skillOneTitle:"Маркетинг",
+      skillOneText:"Бренды, аудитория и креативные идеи.",
+      skillTwoTitle:"Разработка",
+      skillTwoText:"Код, веб и цифровые решения.",
+      skillThreeTitle:"Музыка",
+      skillThreeText:"Пение и творческое самовыражение.",
+      skillFourTitle:"Технологии",
+      skillFourText:"Компьютеры и новые технологии.",
+      detailName:"ИМЯ",
+      detailBirth:"ДАТА РОЖДЕНИЯ",
+      detailPlace:"МЕСТО РОЖДЕНИЯ",
+      detailFocus:"ГЛАВНАЯ ЦЕЛЬ",
+      birthPlace:"Узунбулок, Галляараль, Джизак",
+      goal:"Стать квалифицированным специалистом",
+      journeyEyebrow:"РАЗВИТИЕ",
+      journeyTitle:"Мой путь",
+      journeyLead:"Каждый шаг приближает к большим целям.",
+      journeyNow:"СЕЙЧАС",
+      journeyNext:"СЛЕДУЮЩИЙ ШАГ",
+      journeyGoal:"БОЛЬШАЯ ЦЕЛЬ",
+      journeyOneTitle:"Получение знаний и опыта",
+      journeyOneText:"Изучение маркетинга, программирования и компьютерных технологий, работа над практическими проектами.",
+      journeyTwoTitle:"Развитие личного бренда",
+      journeyTwoText:"Демонстрация своих работ, создание полезного контента и расширение профессиональных связей.",
+      journeyThreeTitle:"Стать профессионалом",
+      journeyThreeText:"Создавать сильные проекты и приносить реальную пользу в своей сфере.",
+      galleryEyebrow:"МОМЕНТЫ",
+      galleryTitle:"Галерея",
+      galleryLead:"Несколько кадров из моей жизни.",
+      contactEyebrow:"КОНТАКТЫ",
+      contactTitle:"Есть проект или идея?",
+      contactText:"Свяжитесь со мной для сотрудничества, предложений или просто общения.",
+      rights:"Все права защищены."
     }
-};
+  };
 
+  const languageSelect = document.getElementById("languageSelect");
+  const themeToggle = document.getElementById("themeToggle");
+  const menuToggle = document.getElementById("menuToggle");
+  const mainNav = document.getElementById("mainNav");
 
-/* =====================================
-   2. SAFE LOCAL STORAGE
-===================================== */
-
-function getSavedValue(key, fallback) {
+  function safeGet(key, fallback) {
     try {
-        return localStorage.getItem(key) || fallback;
+      return localStorage.getItem(key) || fallback;
     } catch (error) {
-        return fallback;
+      return fallback;
     }
-}
+  }
 
-function saveValue(key, value) {
+  function safeSet(key, value) {
     try {
-        localStorage.setItem(key, value);
+      localStorage.setItem(key, value);
     } catch (error) {
-        console.warn("Sozlamani saqlab bo‘lmadi:", error);
+      // Sayt localStorage ishlamasa ham ishlashda davom etadi.
     }
-}
+  }
 
+  function applyLanguage(language) {
+    const selected = translations[language] ? language : "uz";
 
-/* =====================================
-   3. LANGUAGE SYSTEM
-===================================== */
+    document.documentElement.lang = selected;
 
-function applyLanguage(language) {
-    if (!translations[language]) {
-        language = "uz";
-    }
+    document.querySelectorAll("[data-i18n]").forEach((element) => {
+      const key = element.dataset.i18n;
 
-    const words = translations[language];
-
-    document.documentElement.lang = language;
-
-    document.querySelectorAll("[data-i18n]").forEach(element => {
-        const key = element.dataset.i18n;
-
-        if (Object.prototype.hasOwnProperty.call(words, key)) {
-            element.textContent = words[key];
-        }
+      if (translations[selected][key] !== undefined) {
+        element.innerHTML = translations[selected][key];
+      }
     });
-
-    document.querySelectorAll("[data-i18n-placeholder]").forEach(element => {
-        const key = element.dataset.i18nPlaceholder;
-
-        if (Object.prototype.hasOwnProperty.call(words, key)) {
-            element.placeholder = words[key];
-        }
-    });
-
-    document.querySelectorAll("[data-i18n-alt]").forEach(element => {
-        const key = element.dataset.i18nAlt;
-
-        if (Object.prototype.hasOwnProperty.call(words, key)) {
-            element.alt = words[key];
-        }
-    });
-
-    const languageSelect = document.querySelector("#language");
 
     if (languageSelect) {
-        languageSelect.value = language;
+      languageSelect.value = selected;
     }
 
-    saveValue("portfolio-language", language);
-}
+    safeSet("portfolio-language", selected);
+  }
 
-
-/* =====================================
-   4. THEME SYSTEM
-===================================== */
-
-function applyTheme(theme) {
+  function applyTheme(theme) {
     const isLight = theme === "light";
 
     document.body.classList.toggle("light-theme", isLight);
 
-    const themeButton = document.querySelector("#themeToggle");
-
-    if (themeButton) {
-        themeButton.textContent = isLight ? "☾" : "☀";
-
-        themeButton.setAttribute(
-            "aria-label",
-            isLight ? "Tungi rejimga o‘tish" : "Kunduzgi rejimga o‘tish"
-        );
-
-        themeButton.setAttribute("aria-pressed", String(isLight));
+    if (themeToggle) {
+      themeToggle.textContent = isLight ? "☾" : "☼";
+      themeToggle.setAttribute(
+        "aria-label",
+        isLight ? "Qorong‘i rejim" : "Yorug‘ rejim"
+      );
     }
 
-    saveValue("portfolio-theme", theme);
-}
+    safeSet("portfolio-theme", isLight ? "light" : "dark");
+  }
 
+  function initializeMenu() {
+    if (!menuToggle || !mainNav) return;
 
-/* =====================================
-   5. MOBILE MENU
-===================================== */
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("is-open");
 
-function initializeMobileMenu() {
-    const menuButton = document.querySelector("#menuToggle");
-    const navigation = document.querySelector("#navLinks");
-
-    if (!menuButton || !navigation) return;
-
-    function closeMenu() {
-        navigation.classList.remove("open");
-        menuButton.setAttribute("aria-expanded", "false");
-        menuButton.textContent = "☰";
-    }
-
-    menuButton.addEventListener("click", event => {
-        event.stopPropagation();
-
-        const isOpen = navigation.classList.toggle("open");
-
-        menuButton.setAttribute("aria-expanded", String(isOpen));
-        menuButton.textContent = isOpen ? "×" : "☰";
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.textContent = isOpen ? "×" : "☰";
     });
 
-    navigation.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", closeMenu);
+    mainNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mainNav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
+      });
     });
 
-    document.addEventListener("click", event => {
-        if (
-            !navigation.contains(event.target) &&
-            !menuButton.contains(event.target)
-        ) {
-            closeMenu();
-        }
+    document.addEventListener("click", (event) => {
+      if (
+        !mainNav.contains(event.target) &&
+        !menuToggle.contains(event.target)
+      ) {
+        mainNav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
+      }
     });
+  }
 
-    document.addEventListener("keydown", event => {
-        if (event.key === "Escape") closeMenu();
-    });
-}
-
-
-/* =====================================
-   6. PHOTO GALLERY
-===================================== */
-
-function initializeGallery() {
-    const lightbox = document.querySelector("#lightbox");
-    const lightboxImage = document.querySelector("#lightboxImage");
-    const lightboxCaption = document.querySelector("#lightboxCaption");
-
-    const closeButton = document.querySelector("#lightboxClose");
-    const previousButton = document.querySelector("#prevPhoto");
-    const nextButton = document.querySelector("#nextPhoto");
-
-    const galleryItems = Array.from(
-        document.querySelectorAll(".gallery-item")
+  function initializeGallery() {
+    const cards = Array.from(
+      document.querySelectorAll("[data-gallery-index]")
     );
 
-    if (
-        !lightbox ||
-        !lightboxImage ||
-        !closeButton ||
-        !previousButton ||
-        !nextButton ||
-        galleryItems.length === 0
-    ) return;
+    const lightbox = document.getElementById("lightbox");
+    const image = document.getElementById("lightboxImage");
+    const caption = document.getElementById("lightboxCaption");
 
-    let currentPhoto = 0;
-    let lastFocusedElement = null;
+    const closeButton = document.getElementById("lightboxClose");
+    const previousButton = document.getElementById("lightboxPrev");
+    const nextButton = document.getElementById("lightboxNext");
 
-    function showPhoto(index) {
-        currentPhoto = (index + galleryItems.length) % galleryItems.length;
+    if (!cards.length || !lightbox || !image) return;
 
-        const item = galleryItems[currentPhoto];
-        const image = item.querySelector("img");
+    let currentIndex = 0;
 
-        if (!image) return;
+    const items = cards.map((card) => ({
+      src: card.querySelector("img")?.getAttribute("src") || "",
+      alt: card.querySelector("img")?.getAttribute("alt") || "Gallery image"
+    }));
 
-        lightboxImage.src = image.src;
-        lightboxImage.alt = image.alt;
+    function showImage(index) {
+      currentIndex = (index + items.length) % items.length;
 
-        if (lightboxCaption) {
-            const language = getSavedValue("portfolio-language", "uz");
-            const photoText = translations[language]?.missingPhoto || "Photo";
+      image.src = items[currentIndex].src;
+      image.alt = items[currentIndex].alt;
 
-            lightboxCaption.textContent =
-                image.alt || `${photoText} ${currentPhoto + 1}`;
-        }
+      caption.textContent =
+        `${String(currentIndex + 1).padStart(2, "0")} / ` +
+        `${String(items.length).padStart(2, "0")}`;
     }
 
     function openLightbox(index) {
-        lastFocusedElement = document.activeElement;
+      showImage(index);
 
-        showPhoto(index);
+      lightbox.classList.add("is-open");
+      lightbox.setAttribute("aria-hidden", "false");
 
-        lightbox.hidden = false;
-        document.body.classList.add("lightbox-open");
-
-        closeButton.focus();
+      document.body.style.overflow = "hidden";
+      closeButton?.focus();
     }
 
     function closeLightbox() {
-        lightbox.hidden = true;
-        document.body.classList.remove("lightbox-open");
+      lightbox.classList.remove("is-open");
+      lightbox.setAttribute("aria-hidden", "true");
 
-        lightboxImage.src = "";
-
-        if (lastFocusedElement) {
-            lastFocusedElement.focus();
-        }
+      document.body.style.overflow = "";
     }
 
-    galleryItems.forEach((item, index) => {
-        item.addEventListener("click", () => {
-            const photoIndex = Number(item.dataset.photo);
-
-            openLightbox(
-                Number.isInteger(photoIndex) ? photoIndex : index
-            );
-        });
+    cards.forEach((card, index) => {
+      card.addEventListener("click", () => openLightbox(index));
     });
 
-    closeButton.addEventListener("click", closeLightbox);
+    closeButton?.addEventListener("click", closeLightbox);
 
-    previousButton.addEventListener("click", () => {
-        showPhoto(currentPhoto - 1);
+    previousButton?.addEventListener("click", () => {
+      showImage(currentIndex - 1);
     });
 
-    nextButton.addEventListener("click", () => {
-        showPhoto(currentPhoto + 1);
+    nextButton?.addEventListener("click", () => {
+      showImage(currentIndex + 1);
     });
 
-    lightbox.addEventListener("click", event => {
-        if (event.target === lightbox) {
-            closeLightbox();
-        }
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
     });
 
-    document.addEventListener("keydown", event => {
-        if (lightbox.hidden) return;
+    document.addEventListener("keydown", (event) => {
+      if (!lightbox.classList.contains("is-open")) return;
 
-        if (event.key === "Escape") closeLightbox();
-        if (event.key === "ArrowLeft") showPhoto(currentPhoto - 1);
-        if (event.key === "ArrowRight") showPhoto(currentPhoto + 1);
+      if (event.key === "Escape") closeLightbox();
+      if (event.key === "ArrowLeft") showImage(currentIndex - 1);
+      if (event.key === "ArrowRight") showImage(currentIndex + 1);
     });
-}
+  }
 
+  function initializeYear() {
+    const year = document.getElementById("currentYear");
 
-/* =====================================
-   7. SOCIAL LINKS
-===================================== */
-
-function initializeSocialLinks() {
-    const socialLinks = {
-        instagram: "https://instagram.com/_khayitboyevv_x17_",
-        telegram: "https://t.me/khayitboyevv_oo7"
-    };
-
-    Object.entries(socialLinks).forEach(([name, url]) => {
-        document.querySelectorAll(`[data-social="${name}"]`).forEach(link => {
-            link.href = url;
-            link.target = "_blank";
-            link.rel = "noopener noreferrer";
-        });
-    });
-}
-
-
-/* =====================================
-   8. CURRENT YEAR
-===================================== */
-
-function updateCurrentYear() {
-    const yearElement =
-        document.querySelector("#year") ||
-        document.querySelector("#currentYear");
-
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
+    if (year) {
+      year.textContent = new Date().getFullYear();
     }
-}
+  }
 
+  // Saqlangan sozlamalarni yuklash
+  const savedLanguage = safeGet("portfolio-language", "uz");
+  const savedTheme = safeGet("portfolio-theme", "dark");
 
-/* =====================================
-   9. INITIALIZE WEBSITE
-===================================== */
+  // Dastlabki sozlamalar
+  applyLanguage(savedLanguage);
+  applyTheme(savedTheme);
 
-document.addEventListener("DOMContentLoaded", () => {
-    applyLanguage(
-        getSavedValue("portfolio-language", "uz")
-    );
+  // Til almashtirish
+  languageSelect?.addEventListener("change", (event) => {
+    applyLanguage(event.target.value);
+  });
 
-    applyTheme(
-        getSavedValue("portfolio-theme", "dark")
-    );
+  // Rang rejimini almashtirish
+  themeToggle?.addEventListener("click", () => {
+    const nextTheme = document.body.classList.contains("light-theme")
+      ? "dark"
+      : "light";
 
-    const languageSelect = document.querySelector("#language");
+    applyTheme(nextTheme);
+  });
 
-    if (languageSelect) {
-        languageSelect.addEventListener("change", event => {
-            applyLanguage(event.target.value);
-        });
-    }
-
-    const themeButton = document.querySelector("#themeToggle");
-
-    if (themeButton) {
-        themeButton.addEventListener("click", () => {
-            const isLight = document.body.classList.contains("light-theme");
-
-            applyTheme(isLight ? "dark" : "light");
-        });
-    }
-
-    initializeMobileMenu();
-    initializeGallery();
-    initializeSocialLinks();
-    updateCurrentYear();
-
-    console.log("KHAYITBOYEVV website successfully initialized.");
-});
+  initializeMenu();
+  initializeGallery();
+  initializeYear();
+})();
